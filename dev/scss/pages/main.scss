@@ -1,0 +1,40 @@
+@import '../utils/variaveis.scss';
+
+.carousel {
+    position: relative;
+    z-index: 1;
+
+    width: 100%;
+    margin-top: -50px;
+
+    .slide-1, .slide-2 {
+        background: url('../../img/main-slider/slider.png') no-repeat;
+        background-size: cover;
+        height: 690px;
+    }
+
+    .slick-dots {
+        display: flex;
+        position: absolute;
+        left: 50%;
+        bottom: 5%;
+
+        li {
+            width: 15px;
+            height: 15px;
+            border: 2px solid white;
+            background: transparent;
+            &.slick-active {
+              background: $text_white;
+            }
+            button {
+              padding: 0;
+              width: 15px;
+              height: 15px;
+              &::before {
+                display: none;
+              }
+            }
+          }
+    }
+}

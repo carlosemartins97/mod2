@@ -1,0 +1,114 @@
+@import '../utils/variaveis.scss';
+
+.header {
+    background: $default_color;
+    width: 100%;
+}
+
+.content-header {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1170px;
+
+    .header-address {
+        color: $text_white;
+
+        display: flex;
+        justify-content: space-between;
+
+        padding: 10px;
+
+        span {
+            display: flex;
+            align-items: center;
+            font-family: 'Arial', sans-serif;
+            font-size: 12px;
+            img {
+                margin-right: 10px;
+            }
+        }
+    }
+
+    .header-address-contato {
+        display: flex;
+        position: relative;
+
+        >:nth-child(n) {
+            margin: 0 2.5px;
+        }
+
+        #logo-insta {
+            position: absolute;
+            left: 63%;
+            bottom: 15%;
+        }
+    }
+
+}
+
+
+
+.header-menu {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
+    max-width: 1170px;
+
+    display: flex;
+    justify-content: space-between;
+
+    .apresentacao, .reserva {
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+
+
+        .menu-items1, .menu-items2 {
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            padding: unset;
+            margin-top: 25px;
+
+        }
+
+        .menu-contato, .menu-reserva {
+            font-family: 'Arial', sans-serif;
+            font-weight: bold;
+
+            height: 50%;
+            display: flex;
+            align-items: center;
+        }
+        .menu-contato {
+            justify-content: flex-start;
+        }
+        .menu-reserva {
+            justify-content: flex-end;
+        }
+
+        #faca-reserva {
+            background: $default_color;
+            color: $text_white;
+            padding: 10px 0;
+            max-width: 200px;
+            width: 100%;
+
+
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            > img {
+                margin-right: 10px;
+            }
+        }
+    }
+
+    #header-logo {
+        margin-top: -75px;
+    }
+}
