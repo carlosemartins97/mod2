@@ -19,7 +19,7 @@
     <?php include_once('./dev/views/includes/header.php') ?>
 
     <section class="carousel">
-        <div class="slide-1">
+        <div class="main-carousel-slides">
             <div class="slide-content">
                 <span>SEJA BEM VINDO</span>
 
@@ -29,7 +29,7 @@
             </div>
 
         </div>
-        <div class="slide-2">
+        <div class="main-carousel-slides">
             <div class="slide-content">
                 <span>SEJA BEM VINDO</span>
 
@@ -40,8 +40,51 @@
         </div>
     </section>
 
-    <section class="quartos">
-
+    <section class="acomodacoes">
+        <h1>Nossas Acomodações</h1>
+        <div class="acomodacoes-container">
+            <div class="acomodacoes-content">
+                <img src="dist/img/acomodacoes/suite-master.png" alt="Acomodação Suíte Master">
+                <div class="acomodacoes-info">
+                    <h2>Suíte Master</h2>
+                    <p>
+                        Cama de casal queen,
+                        Frigobar, Varanda com vista pro mar,
+                        Banheiro individual
+                    </p>
+                    <a href="#">Reservar</a>
+                </div>
+            </div>
+            <div class="acomodacoes-content">
+                <img src="dist/img/acomodacoes/suite-simples.png" alt="Acomodação Suíte Master">
+                <div class="acomodacoes-info">
+                    <h2>Suíte Simples</h2>
+                    <p>
+                        Acomodação para duas pessoas (casal) 
+                        ou 1 pessoa (quarto individual)
+                        Cama de casal Queen, Frigobar, 
+                        Banheiro individual
+                    </p>
+                    <a href="#">Reservar</a>
+                </div>
+            </div>
+            <div class="acomodacoes-content">
+                <img src="dist/img/acomodacoes/quarto-coletivo.png" alt="Acomodação Suíte Master">
+                <div class="acomodacoes-info">
+                    <h2>Quarto Coletivo</h2>
+                    <p>
+                        Acomodação coletiva para até 6 
+                        pessoas 3 beliches, Frigobar Locker no 
+                        quarto com 1 armazenamento
+                        para cada pessoa
+                    </p>
+                    <a href="#">Reservar</a>
+                </div>
+            </div>
+        </div>
+        <div class="acomodacoes-moreinfo">
+            <a href="#">Mais acomodações</a>
+        </div>
     </section>
 
     
