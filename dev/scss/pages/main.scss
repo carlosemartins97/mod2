@@ -19,6 +19,8 @@
           margin: 0 auto;
           color: $text_white;
           padding-top: 175px;
+          padding-left: 10px;
+          padding-right: 10px;
 
           span, a {
             font-size: 1.5rem;
@@ -122,9 +124,9 @@
     color: $default_color;
     font-weight: bold;
     border: 3px solid $default_color;
-    width: 100px;
     margin: 0 auto;
-    padding: 0.5rem;
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
     transition: color 0.2s;
     transition: background 0.2s;
 
@@ -138,7 +140,11 @@
     justify-content: space-between;
     max-width: 1170px;
     width: 100%;
-    margin: 0 auto;
+    margin: 0 auto;   
+
+    @media(max-width: 1170px){
+      flex-direction: column;
+    }
 
     
     .acomodacoes-content {
@@ -146,6 +152,12 @@
       height: 600px;
       max-width: 360px;
       background-color: $grey-background;
+
+      @media(max-width: 1170px){
+        margin: 20px auto;
+
+      }
+
       .acomodacoes-info {
         position: relative;
         z-index: 2;
@@ -159,13 +171,39 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+
+        
+
         h2, p, a {
           text-align: center;
+        }
+        h2 {
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+
+          transition: color 0.2s;
+          
+          &::after {
+            content: '';
+            margin-top: 10px;
+            width: 50px;
+            border-bottom: 1px solid $default_color;
+          }
         }
         p {
           font-size: 0.9rem;
           line-height: 1.5rem;
           font-family: 'Arial', sans-serif;
+        }
+
+        &:hover {
+          border: 3px solid $default_color;
+          h2 {
+            color: $default_color;
+          }
         }
         
       }
