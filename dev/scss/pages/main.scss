@@ -2,101 +2,101 @@
 
 
 .carousel {
-    position: relative;
-    z-index: 1;
-    overflow-x: hidden;
+  position: relative;
+  z-index: 1;
+  overflow-x: hidden;
 
-    width: 100%;
-    margin-top: -40px;
+  width: 100%;
+  margin-top: -40px;
 
-    .main-carousel-slides {
-        background: url('../../img/main-slider/slider.png') no-repeat;
-        background-size: cover;
-        height: 690px;
-        .slide-content {
-          width: 100%;
-          max-width: 1170px;
-          margin: 0 auto;
-          color: $text_white;
-          padding-top: 175px;
-          padding-left: 10px;
-          padding-right: 10px;
+  .main-carousel-slides {
+      background: url('../img/main-slider/slider.png') no-repeat;
+      background-size: cover;
+      height: 690px;
+      .slide-content {
+        width: 100%;
+        max-width: 1170px;
+        margin: 0 auto;
+        color: $text_white;
+        padding-top: 175px;
+        padding-left: 10px;
+        padding-right: 10px;
 
-          span, a {
-            font-size: 1.5rem;
-            letter-spacing: 2px;
-            font-weight: 300;
+        span, a {
+          font-size: 1.5rem;
+          letter-spacing: 2px;
+          font-weight: 300;
+        }
+
+        h1 {
+          font-size: 3.75rem;
+          letter-spacing: 6px;
+          margin: 30px 0 60px 0;
+        }
+
+        a {
+          font-weight: bold;
+          padding: 2rem 1.5rem;
+          position: relative;
+          z-index: 2;
+
+          transition: color 0.2s;
+          &:hover {
+            color: #0009;
           }
 
-          h1 {
-            font-size: 3.75rem;
-            letter-spacing: 6px;
-            margin: 30px 0 60px 0;
+          &::after, &::before {
+            content: '';
+            position: absolute;
+            z-index: 1;
+            
+            width: 140px;
+            height: 60px;
           }
 
-          a {
-            font-weight: bold;
-            padding: 2rem 1.5rem;
-            position: relative;
-            z-index: 2;
+          &::after {
+            left: 0;
+            bottom: 0;
+            background: url('../img/bordas/border-left.png') no-repeat;
+          }
+          &::before {
+            top: 0;
+            right: 0;
+            background: url('../img/bordas/border-right.png') no-repeat;
+            
+          }
+        }
+      }
+  }
 
-            transition: color 0.2s;
-            &:hover {
-              color: #0009;
-            }
+  .slick-dots {
+      display: flex;
+      position: absolute;
+      left: 50%;
+      bottom: 5%;
 
-            &::after, &::before {
-              content: '';
-              position: absolute;
-              z-index: 1;
-              
-              width: 140px;
-              height: 60px;
-            }
-
-            &::after {
-              left: 0;
-              bottom: 0;
-              background: url('../../img/bordas/border-left.png') no-repeat;
-            }
+      li {
+          width: 15px;
+          height: 15px;
+          border: 2px solid white;
+          background: transparent;
+          
+          & + li {
+            margin: 0 10px;
+          }
+          &.slick-active {
+            background: $text_white;
+          }
+          button {
+            padding: 0;
+            width: 15px;
+            height: 15px;
             &::before {
-              top: 0;
-              right: 0;
-              background: url('../../img/bordas/border-right.png') no-repeat;
-              
+              display: none;
             }
           }
         }
-    }
-
-    .slick-dots {
-        display: flex;
-        position: absolute;
-        left: 50%;
-        bottom: 5%;
-
-        li {
-            width: 15px;
-            height: 15px;
-            border: 2px solid white;
-            background: transparent;
-            
-            & + li {
-              margin: 0 10px;
-            }
-            &.slick-active {
-              background: $text_white;
-            }
-            button {
-              padding: 0;
-              width: 15px;
-              height: 15px;
-              &::before {
-                display: none;
-              }
-            }
-          }
-    }
+  }
 }
 
 .acomodacoes {

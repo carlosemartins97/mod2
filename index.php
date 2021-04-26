@@ -9,11 +9,10 @@
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" tpe="text/css" href="dist/css/utils/global.css">
-    <link rel="stylesheet" tpe="text/css" href="dist/css/pages/main.css">
-    
 
-    <title>Hostel</title>
+    <link rel="stylesheet" tpe="text/css" href="dist/css/styles.css">
+
+    <title>House & Hostel</title>
 </head>
 <body>
     <?php include_once('./dev/views/includes/header.php') ?>
