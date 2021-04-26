@@ -20,11 +20,27 @@
 
     <section class="carousel">
         <div class="slide-1">
-            <h1>teste</h1>
+            <div class="slide-content">
+                <span>SEJA BEM VINDO</span>
+
+                <h1>RESERVE SUA HOSPEDAGEM EM GUARUJÁ</h1>
+
+                <a href="#">CLIQUE E FAÇA SUA RESERVA</a>
+            </div>
+
         </div>
         <div class="slide-2">
-            <h1>teste2</h1>
+            <div class="slide-content">
+                <span>SEJA BEM VINDO</span>
+
+                <h1>RESERVE SUA HOSPEDAGEM EM GUARUJÁ</h1>
+
+                <a href="#">CLIQUE E FAÇA SUA RESERVA</a>
+            </div>
         </div>
+    </section>
+
+    <section class="quartos">
 
     </section>
 
