@@ -86,6 +86,30 @@
         </div>
     </section>
 
+    <section class="conheca-estrutura-container">
+        <div class="conheca-estrutura-content">
+            <div class="apresentacao-container">
+                <div class="conheca-estrutura-apresentacao">
+                    <span>Bem vindo ao House & Hostel</span>
+                    <h1>Um lugar pra relaxar</h1>
+
+                    <p>
+                        Cuidadosamente planejado em uma área de mais de 130 mil m², com exuberantes jardins de inspiração oriental, proporciona o clima de paz e tranquilidade 
+                        ideal para fugir do stress da vida moderna.
+                        Para quem procura um Hotel em meio à natureza com segurança e boa gastronomia contamos com uma completa infra estrutura, 96 amplas suítes com sacada privativa, 
+                        uma área social de 400m², espaço para eventos com salas de convenções para até 350 
+                        pessoas, restaurante com cozinha contemporânea, piscinas, centro fitness e as instalações do SPA com massagens, terapias, estética, hidromassagem e sauna.
+                    </p>
+
+                    <span>Conheça Nossa Estrutura <img src="./dist/img/conheca-estrutura/seta-baixo.png" alt="Seta apontando pra baixo"></span>
+                </div>
+                <div class="conheca-estrutura-imagem">
+                    <img src="./dist/img/conheca-estrutura/conheca-estrutura.png" alt="Imagem de um quarto com vista para praia.">
+                </div>
+            </div>
+        </div>
+    </section>
+
     
 
     
