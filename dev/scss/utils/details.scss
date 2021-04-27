@@ -1,0 +1,30 @@
+@import './variaveis.scss';
+
+.sublinhar-titulo {
+    padding-bottom: 25px;
+    &::after {
+        content: '';
+        margin-top: 1rem;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 3.5rem;
+        border-bottom: 1px solid $default_color;
+      }
+}
+
+.link-padrao {
+  color: $default_color;
+  font-weight: bold;
+  border: 3px solid $default_color;
+  margin: 0 auto;
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  transition: color 0.2s;
+  transition: background 0.2s;
+
+  &:hover {
+    color: $text_white;
+    background: $default_color;
+  }
+}

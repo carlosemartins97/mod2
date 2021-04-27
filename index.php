@@ -51,7 +51,7 @@
                         Frigobar, Varanda com vista pro mar,
                         Banheiro individual
                     </p>
-                    <a href="#">Reservar</a>
+                    <a class="link-padrao" href="#">Reservar</a>
                 </div>
             </div>
             <div class="acomodacoes-content">
@@ -64,7 +64,7 @@
                         Cama de casal Queen, Frigobar, 
                         Banheiro individual
                     </p>
-                    <a href="#">Reservar</a>
+                    <a class="link-padrao" href="#">Reservar</a>
                 </div>
             </div>
             <div class="acomodacoes-content">
@@ -77,12 +77,12 @@
                         quarto com 1 armazenamento
                         para cada pessoa
                     </p>
-                    <a href="#">Reservar</a>
+                    <a class="link-padrao" href="#">Reservar</a>
                 </div>
             </div>
         </div>
         <div class="acomodacoes-moreinfo">
-            <a href="#">Mais acomodações</a>
+            <a class="link-padrao" href="#">Mais acomodações</a>
         </div>
     </section>
 
@@ -91,7 +91,7 @@
             <div class="apresentacao-container">
                 <div class="conheca-estrutura-apresentacao">
                     <span>Bem vindo ao House & Hostel</span>
-                    <h1>Um lugar pra relaxar</h1>
+                    <h1 class="sublinhar-titulo">Um lugar pra relaxar</h1>
 
                     <p>
                         Cuidadosamente planejado em uma área de mais de 130 mil m², com exuberantes jardins de inspiração oriental, proporciona o clima de paz e tranquilidade 
@@ -107,8 +107,21 @@
                     <img src="./dist/img/conheca-estrutura/conheca-estrutura.png" alt="Imagem de um quarto com vista para praia.">
                 </div>
             </div>
-            <div class="conheca-estrutura-slider">
-                <p>CONTEUDO</p>
+        </div>
+        <div class="conheca-estrutura-fotos">
+            <div class="estrutura-slider">
+                <img src="dist/img/conheca-estrutura/slider/q3.png" alt="Foto da sala">
+                <img src="dist/img/conheca-estrutura/slider/q2.png" alt="Foto do escritório">
+                <img src="dist/img/conheca-estrutura/slider/q4.png" alt="Foto do banheiro">
+                <img src="dist/img/conheca-estrutura/slider/q1.png" alt="Foto do quarto">
+            </div>
+            <div class="estrutura-moreinfo">
+                <h2 class="estrutura-moreinfo-titulo">House & Hostel</h2>
+                <a class="link-padrao" href="#">VER FOTOS</a>
+            </div>
+            <div class="estrutura-buttons">
+                <button class="estrutura-buttons-prev"><img src="dist/img/conheca-estrutura/slider/setas/left.png" alt="Seta indicando slide anterior."></button>
+                <button class="estrutura-buttons-next"><img src="dist/img/conheca-estrutura/slider/setas/right.png" alt="Seta indicando próximo slide."></button>
             </div>
         </div>
     </section>
@@ -117,7 +130,7 @@
         <div class="fale-conosco-container">
             <div class="fale-conosco-header">
                 <span>Fale Conosco</span>
-                <h1>Reserve sua hospedagem <br> em Guarujá</h1>
+                <h1 class="sublinhar-titulo">Reserve sua hospedagem <br> em Guarujá</h1>
             </div>
             <div class="fale-conosco-contato">
                 <div class="contato-atendimento">
@@ -157,9 +170,6 @@
 
     <?php include_once('./dev/views/includes/footer.php') ?>
 
-    
-
-    
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
