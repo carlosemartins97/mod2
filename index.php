@@ -107,8 +107,55 @@
                     <img src="./dist/img/conheca-estrutura/conheca-estrutura.png" alt="Imagem de um quarto com vista para praia.">
                 </div>
             </div>
+            <div class="conheca-estrutura-slider">
+                <p>CONTEUDO</p>
+            </div>
         </div>
     </section>
+
+    <section class="fale-conosco">
+        <div class="fale-conosco-container">
+            <div class="fale-conosco-header">
+                <span>Fale Conosco</span>
+                <h1>Reserve sua hospedagem <br> em Guarujá</h1>
+            </div>
+            <div class="fale-conosco-contato">
+                <div class="contato-atendimento">
+                    <div class="contato-imagem">
+                        <img src="dist/img/fale-conosco/phone.png" alt="Ícone de um telefone">
+                    </div>
+                    <div class="contato-info">
+                        <h2>Atendimento</h2>
+                        <span>Fone fax: (00)0000-0000</span>
+                        <span>contato@house&hostel.com.br</span>
+                        <span class="contato-atendimento-whatsapp"><img src="dist/img/header/whats-icon.png" alt="ícone do whatsapp">(00) 0000-0000</span>
+                    </div>
+                    </div>
+                <div class="contato-endereco">
+                    <div class="contato-imagem">
+                        <img src="dist/img/fale-conosco/endereco.png" alt="Ícone de endereço">
+                    </div>
+                    <div class="contato-info">
+                        <h2>Endereço</h2>
+                        <span>Avenida Miguel Stéfano, 4923</span>
+                        <span>Enseada, Guarujá.</span>
+                    </div>
+                </div>
+                <div class="contato-funcionamento">
+                    <div class="contato-imagem">
+                        <img src="dist/img/fale-conosco/time.png" alt="Ícone de um relégio">
+                    </div>
+                    <div class="contato-info">
+                        <h2>Funcionamento</h2>
+                        <span>Segunda à Sexta das 10h00 às 18h00</span>
+                        <span>Sábado das 9h00 às 13h00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <?php include_once('./dev/views/includes/footer.php') ?>
 
     
 

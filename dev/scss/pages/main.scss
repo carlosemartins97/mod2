@@ -1,6 +1,5 @@
 @import '../utils/variaveis.scss';
 
-
 .carousel {
   position: relative;
   z-index: 1;
@@ -221,33 +220,85 @@
   width: 100%;
   background: $text_white;
 
-  .apresentacao-container {
+  .conheca-estrutura-content {
     width: 100%;
     max-width: 1170px;
     margin: 0 auto;
-    display: flex;
-    margin-top: 50px;
-    margin-bottom: 40px;
 
-    .conheca-estrutura-apresentacao {
-      color: $text_grey;
-      margin-top: 40px;
-
-      span {
-        font-size: 1.25rem;
-        letter-spacing: 4px;
-        font-weight: 300;
-        width: 100%;
-
-        position: relative;
-        img {
-          position: absolute;
-          top: 50%;
-          right: -70%;
+    .apresentacao-container {
+    
+      display: flex;
+      margin-top: 50px;
+      margin-bottom: 40px;
+  
+      .conheca-estrutura-apresentacao {
+        color: $text_grey;
+        margin-top: 40px;
+  
+        span {
+          font-size: 1.25rem;
+          letter-spacing: 4px;
+          font-weight: 300;
+          width: 100%;
+  
+          position: relative;
+          img {
+            position: absolute;
+            top: 50%;
+            right: -70%;
+          }
+        }
+  
+        > h1 {
+          font-size: 35px;
+          letter-spacing: 2px;
+          position: relative;
+          &::after {
+            content: '';
+            margin-top: 1rem;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 3.5rem;
+            border-bottom: 1px solid $default_color;
+          }
+        }
+  
+        > p {
+          font-size: 0.875rem;
+          font-family: "Arial", sans-serif;
+          margin: 50px 0 70px 0;
+          line-height: 24px;
         }
       }
+    }
+    .conheca-nossa-estrutura-slider {
+    //slider
 
-      > h1 {
+    }
+  }
+}
+
+.fale-conosco {
+  padding: 50px 0 150px 0;
+  width: 100%;
+  background: url('../img/fale-conosco/secretaria.png') no-repeat;
+  background-position: right;
+  background-size: contain;
+
+  .fale-conosco-container {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+
+    .fale-conosco-header {
+      color: $text_grey;
+      margin-bottom: 50px;
+      span {
+        font-size: 20px;
+        letter-spacing: 4px;
+      }
+      h1 {
         font-size: 35px;
         letter-spacing: 2px;
         position: relative;
@@ -261,13 +312,68 @@
           border-bottom: 1px solid $default_color;
         }
       }
+    }
 
-      > p {
-        font-size: 0.875rem;
-        font-family: "Arial", sans-serif;
-        margin: 50px 0 70px 0;
-        line-height: 24px;
+    .fale-conosco-contato {
+      display: flex;
+      justify-content: space-around;
+      border: 3px solid $default_color;
+      background-color: rgba(255, 255, 255, 0.8);
+
+      padding: 60px 40px;
+
+      -webkit-box-shadow: 0px 0px 25px -11px rgba(0,0,0,0.75);
+      -moz-box-shadow: 0px 0px 25px -11px rgba(0,0,0,0.75);
+      box-shadow: 0px 0px 25px -11px rgba(0,0,0,0.75);
+
+      font-family: "Arial", sans-serif;
+      color: $text_grey;
+
+      .contato-imagem {
+        background-color: $default_color;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 25px;
+      }
+
+      .contato-info {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        
+        .contato-atendimento-whatsapp {
+          font-weight: bold;
+          color: $default_color;
+          font-size: 14px;
+          font-family: "Arial";
+          display: block;
+          margin-top: 10px;
+
+          display: flex;
+          align-items: center;
+          >img {
+            margin-right: 10px;
+          }
+        }
+      }
+
+      .contato-atendimento, .contato-endereco, .contato-funcionamento {
+        display: flex;
+        
+        h2 {
+          color: $default_color;
+          font-size: 20px;
+          margin-bottom: 10px;
+        }
+        span, p {
+          font-size: 12px;
+          line-height: 18px;
+        }
       }
     }
+
   }
 }

@@ -7,7 +7,7 @@
 </head>
 <body>
     
-    <div class="header">
+    <header class="header">
         <div class="content-header">
             <div class="header-address">
                 <span><img src="dev/img/header/gps2.png" alt="Imagem de um 'markup' de localização."> Avenida Miguel Shifano, 4923, Enseada Guarujá</span>
@@ -17,7 +17,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </header>
     <div class="header-menu">
         <div class="apresentacao">
             <div class="menu-contato">
