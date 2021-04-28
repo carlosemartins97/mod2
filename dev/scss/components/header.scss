@@ -181,4 +181,15 @@
             display: none;
         }
     }
+
+    #header-logo-collapse {
+        max-width: 100%;
+        margin: 0 auto;
+        margin-top:  -35px;
+        display: block;
+    }
+
+    #link-logo-collapse {
+        border-bottom: 1px solid $default_color;
+    }
 }

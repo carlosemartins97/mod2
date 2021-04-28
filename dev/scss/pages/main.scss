@@ -25,6 +25,10 @@
         padding-left: 10px;
         padding-right: 10px;
 
+        @media(max-width: 550px){
+          text-align: center;
+        }
+
         span, a {
           font-size: 1.5rem;
           letter-spacing: 2px;
@@ -35,6 +39,9 @@
           font-size: 3.75rem;
           letter-spacing: 6px;
           margin: 30px 0 60px 0;
+          @media(max-width: 550px){
+            font-size: 2rem;
+          }
         }
 
         a {
@@ -43,7 +50,14 @@
           position: relative;
           z-index: 2;
 
+          width: 100%;
+
           transition: color 0.2s;
+
+          @media(max-width: 550px){
+            font-size: 0.9rem;
+          }
+          
           &:hover {
             color: $default_color;
           }
@@ -55,17 +69,19 @@
             
             width: 140px;
             height: 60px;
+            
           }
 
           &::after {
-            left: 0;
-            bottom: 0;
-            background: url('../img/bordas/border-left.png') no-repeat;
+            right: 0;
+            top: 0;
+            background: url('../img/bordas/border-right.png') no-repeat;
+            
           }
           &::before {
-            top: 0;
-            right: 0;
-            background: url('../img/bordas/border-right.png') no-repeat;
+            bottom: 0;
+            left: 0;
+            background: url('../img/bordas/border-left.png') no-repeat;
             
           }
         }
@@ -105,21 +121,29 @@
 .acomodacoes {
   margin-top: -30px;
   background-color: $grey-light-background;
+  padding: 0 10px;
   h1 {
     text-align: center;
     letter-spacing: 2px;
     font-size: 2.25rem;
     padding-top: 100px;
+    padding-bottom: 20px;
     margin-bottom: 100px;
     position: relative;
     &::after {
       content: '';
+      margin-top: 1rem;
       position: absolute;
-      bottom: -20px;
-      left: 49%;
-
+      bottom: 0;
+      left: 0;
       width: 3.5rem;
       border-bottom: 1px solid $default_color;
+      @media(max-width: 1170px){
+        left: 45%;
+      }
+      @media(max-width: 550px){
+        left: 40%;
+      }
     }
   }
 
@@ -145,6 +169,10 @@
       @media(max-width: 1170px){
         margin: 20px auto;
 
+      }
+
+      img {
+        max-width: 100%;
       }
 
       .acomodacoes-info {
@@ -199,8 +227,9 @@
     }
   }
   .acomodacoes-moreinfo {
-    width: 100%;
+    max-width: 453px;
     text-align: center;
+    margin: 0 auto;
     margin-top: 80px;
     padding-bottom: 80px;
   }
@@ -221,6 +250,25 @@
       display: flex;
       margin-top: 50px;
       margin-bottom: 40px;
+      padding: 0 10px;
+
+      @media(max-width: 1170px){
+        flex-direction: column-reverse;
+        .conheca-estrutura-imagem {
+          margin: 0 auto;
+          img {
+            max-width: 100%;
+          }
+        }
+        .conheca-estrutura-apresentacao {
+          margin: 50px 0;
+          h1, >:first-child {
+            display: block;
+            width: 100%;
+            text-align: center;
+          }
+        }
+      }
   
       .conheca-estrutura-apresentacao {
         color: $text_grey;
@@ -231,12 +279,19 @@
           letter-spacing: 4px;
           font-weight: 300;
           width: 100%;
+          @media(max-width: 550px){
+            text-align: center;
+            display: block;
+          }
   
           position: relative;
           img {
             position: absolute;
             top: 50%;
             right: -70%;
+            @media(max-width: 550px){
+              display: none;
+            }
           }
         }
   
@@ -244,6 +299,22 @@
           font-size: 35px;
           letter-spacing: 2px;
           position: relative;
+          padding-bottom: 25px;
+          &::after {
+              content: '';
+              margin-top: 1rem;
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              width: 3.5rem;
+              border-bottom: 1px solid $default_color;
+              @media(max-width: 1170px){
+                left: 45%;
+              }
+              @media(max-width: 550px){
+                left: 40%;
+              }
+          }
         }
   
         > p {
@@ -290,6 +361,12 @@
           border: unset;
           background: $default_color;
           padding: 20px 30px;
+          @media(max-width: 990px){
+            padding: 15px 22.5px;
+          }
+          @media(max-width: 550px){
+            padding: 10px 15px;
+          }
         }
       }
 
@@ -315,7 +392,7 @@
 
 
 .fale-conosco {
-  padding: 50px 0 150px 0;
+  padding: 50px 10px 150px 10px;
   width: 100%;
   background: url('../img/fale-conosco/secretaria.png') no-repeat;
   background-position: right;
@@ -329,6 +406,20 @@
     .fale-conosco-header {
       color: $text_grey;
       margin-bottom: 50px;
+      @media(max-width: 550px){
+        span {
+          text-align: center;
+          display: block;
+        }
+        h1 {
+          text-align: center;
+          &::after {
+          @media(max-width: 550px){
+            left: 40%;
+          }
+          }
+        }
+      }
       span {
         font-size: 20px;
         letter-spacing: 4px;
@@ -354,6 +445,16 @@
 
       font-family: "Arial", sans-serif;
       color: $text_grey;
+
+      @media(max-width: 1170px){
+        flex-direction: column;
+        justify-content: center;
+        max-width: 400px;
+      }
+
+      @media(max-width: 550px){
+        max-width: unset;
+      }
 
       .contato-imagem {
         background-color: $default_color;
@@ -388,6 +489,19 @@
 
       .contato-atendimento, .contato-endereco, .contato-funcionamento {
         display: flex;
+
+        @media(max-width: 1170px){
+          margin-top: 20px;
+        }
+
+        @media(max-width: 550px){
+          flex-direction: column;
+          text-align: center;
+          margin: 20px auto;
+          .contato-imagem {
+            margin: 0 auto;
+          }
+        }
         
         h2 {
           color: $default_color;

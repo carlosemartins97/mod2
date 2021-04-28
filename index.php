@@ -91,7 +91,7 @@
             <div class="apresentacao-container">
                 <div class="conheca-estrutura-apresentacao">
                     <span>Bem vindo ao House & Hostel</span>
-                    <h1 class="sublinhar-titulo">Um lugar pra relaxar</h1>
+                    <h1>Um lugar pra relaxar</h1>
 
                     <p>
                         Cuidadosamente planejado em uma área de mais de 130 mil m², com exuberantes jardins de inspiração oriental, proporciona o clima de paz e tranquilidade 

@@ -19,6 +19,7 @@
         </div>
     </header>
     <nav class="header-menu">
+        <a id="link-logo-collapse" href="/"><img id="header-logo-collapse" src="dev/img/header/full-logo.png" alt="logo da empresa Hostel"></a>
         <button id="header-menu-button" type="button"></button>
         <div class="apresentacao">
             <div class="menu-contato">
