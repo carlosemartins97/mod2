@@ -18,7 +18,8 @@
             </div>
         </div>
     </header>
-    <div class="header-menu">
+    <nav class="header-menu">
+        <button id="header-menu-button" type="button"></button>
         <div class="apresentacao">
             <div class="menu-contato">
                 <span><img src="dev/img/header/whats-icon.png" alt="logo do whatsapp"> (00) 0000-0000</span>
@@ -29,7 +30,7 @@
                 <li><a href="#">FOTOS</a></li>
             </ul>
         </div>
-        <img id="header-logo" src="dev/img/header/full-logo.png" alt="logo da empresa Hostel">
+        <a href="/"><img id="header-logo" src="dev/img/header/full-logo.png" alt="logo da empresa Hostel"></a>
         <div class="reserva">
             <div class="menu-reserva">
                 <a id="faca-reserva" href="#"><img src="dev/img/header/calendario.png" alt="imagem de um calendário">Faça sua Reserva</a>
@@ -40,4 +41,4 @@
                 <li><a href="#">CONTATOS</a></li>
             </ul>
         </div>
-    </div>
+    </nav>

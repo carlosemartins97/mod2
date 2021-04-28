@@ -8,6 +8,10 @@
   width: 100%;
   margin-top: -40px;
 
+  @media(max-width: 1170px){
+    margin-top: unset;
+  }
+
   .main-carousel-slides {
       background: url('../img/main-slider/slider.png') no-repeat;
       background-size: cover;
@@ -41,7 +45,7 @@
 
           transition: color 0.2s;
           &:hover {
-            color: #0009;
+            color: $default_color;
           }
 
           &::after, &::before {

@@ -37,6 +37,11 @@ $(document).ready(function(){
       });
 });
 
+$('#header-menu-button').click(function(){
+  $('.apresentacao').toggle();
+  $('.reserva').toggle();
+});
+
 
 
 
