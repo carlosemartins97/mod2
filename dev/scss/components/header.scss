@@ -191,5 +191,9 @@
 
     #link-logo-collapse {
         border-bottom: 1px solid $default_color;
+        display: none;
+        @media(max-width: 1170px){
+            display: block;
+        }
     }
 }

@@ -26,7 +26,7 @@
                 <span><img src="dev/img/header/whats-icon.png" alt="logo do whatsapp"> (00) 0000-0000</span>
             </div>
             <ul class="menu-items1">
-                <li><a href="#">O HOSTEL</a></li>
+                <li><a href="/o-hostel.php">O HOSTEL</a></li>
                 <li><a href="#">ACOMODAÇÕES</a></li>
                 <li><a href="#">FOTOS</a></li>
             </ul>
