@@ -37,9 +37,27 @@ $(document).ready(function(){
       });
 });
 
+//navbar responsiva
 $('#header-menu-button').click(function(){
   $('.apresentacao').fadeToggle();
   $('.reserva').fadeToggle();
+});
+
+// slider acomodacoes
+$('#slider-img-principal').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: true,
+  fade: true,
+  asNavFor: '#slider-img-carousel'
+});
+$('#slider-img-carousel').slick({
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  asNavFor: '#slider-img-principal',
+  dots: false,
+  infinite: true,
+  focusOnSelect: true
 });
 
 

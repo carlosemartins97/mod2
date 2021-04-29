@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
+    <?php 
+        $url =  "//{$_SERVER['HTTP_HOST']}{$_SERVER['REQUEST_URI']}";
+        $home_url = htmlspecialchars( $url, ENT_QUOTES, 'UTF-8' );
+    ?>
     
     <header class="header">
         <div class="content-header">
@@ -19,19 +23,19 @@
         </div>
     </header>
     <nav class="header-menu">
-        <a id="link-logo-collapse" href="/"><img id="header-logo-collapse" src="dev/img/header/full-logo.png" alt="logo da empresa Hostel"></a>
+        <a id="link-logo-collapse" href="/carlos-martins/house-hostel/"><img id="header-logo-collapse" src="dev/img/header/full-logo.png" alt="logo da empresa Hostel"></a>
         <button id="header-menu-button" type="button"></button>
         <div class="apresentacao">
             <div class="menu-contato">
                 <span><img src="dev/img/header/whats-icon.png" alt="logo do whatsapp"> (00) 0000-0000</span>
             </div>
             <ul class="menu-items1">
-                <li><a href="/o-hostel.php">O HOSTEL</a></li>
+                <li><a href=" <?= $home_url .'o-hostel.php' ?>">O HOSTEL</a></li>
                 <li><a href="#">ACOMODAÇÕES</a></li>
                 <li><a href="#">FOTOS</a></li>
             </ul>
         </div>
-        <a href="/"><img id="header-logo" src="dev/img/header/full-logo.png" alt="logo da empresa Hostel"></a>
+        <a href="/carlos-martins/house-hostel/"><img id="header-logo" src="dev/img/header/full-logo.png" alt="logo da empresa Hostel"></a>
         <div class="reserva">
             <div class="menu-reserva">
                 <a id="faca-reserva" href="#"><img src="dev/img/header/calendario.png" alt="imagem de um calendário">Faça sua Reserva</a>

@@ -40,7 +40,9 @@
     </section>
 
     <section class="acomodacoes">
-        <h1>Nossas Acomodações</h1>
+        <div class="acomodacoes-titulo">
+            <h1 class="sublinhar-titulo-centralizado">Nossas Acomodações</h1>
+        </div>
         <div class="acomodacoes-container">
             <div class="acomodacoes-content">
                 <img src="dist/img/acomodacoes/suite-master.png" alt="Acomodação Suíte Master">

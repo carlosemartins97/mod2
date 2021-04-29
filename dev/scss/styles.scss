@@ -2,6 +2,7 @@
 @import './components/footer.scss';
 @import './components/header.scss';
 @import './includes/o-hostel.scss';
+@import './pages/acomodacoes.scss';
 @import './utils/details.scss';
 @import './utils/variaveis.scss';
 
@@ -34,4 +35,18 @@ button {
 a {
     color: inherit;
     text-decoration: none;
+}
+
+h1,h2,h3 {
+    letter-spacing: 2px;
+    line-height: 44px;
+
+}
+
+h1 {
+    font-size: 2.2rem;
+}
+
+h2 {
+    font-size: 1.25rem;
 }

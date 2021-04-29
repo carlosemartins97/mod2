@@ -13,6 +13,25 @@
       }
 }
 
+.sublinhar-titulo-centralizado {
+  padding-bottom: 25px;
+  &::after {
+    content: '';
+    margin-top: 1rem;
+    position: absolute;
+    bottom: 0;
+    left: 550px;
+    width: 3.5rem;
+    border-bottom: 1px solid $default_color;
+    @media(max-width: 1170px){
+      left: 45%;
+    }
+    @media(max-width: 550px){
+      left: 40%;
+    }
+  }
+}
+
 .link-padrao {
   color: $default_color;
   font-weight: bold;
