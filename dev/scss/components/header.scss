@@ -92,7 +92,7 @@
         width: 2rem;
         height: 4px;
 
-        margin: 10px auto;
+        margin: 10px auto 20px auto;
         
         @media(min-width: 1170px){
             display: none;
@@ -130,6 +130,7 @@
             }
 
             @media(max-width: 1170px){
+                margin: unset;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
@@ -162,34 +163,8 @@
             display: flex;
             align-items: center;
             @media(max-width: 1170px){
-                margin-top: 30px;
+                margin-top: 0;
                 justify-content: center;
-            }
-        }
-
-        #faca-reserva {
-            background: $default_color;
-            color: $text_white;
-            padding: 10px 0;
-            max-width: 200px;
-            width: 100%;
-
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            
-            transition: transform 0.2s;
-
-            &:hover {
-                transform: scale(1.1);
-            }
-
-            > img {
-                margin-right: 10px;
-            }
-
-            @media(max-width: 1170px){
-                padding: 10px 10px;
             }
         }
     }
@@ -209,13 +184,69 @@
         margin: 0 auto;
         margin-top:  -35px;
         display: block;
+        transition: transform 0.2s; 
+
+        &:hover {
+            transform: scale(1.1); 
+        }
     }
 
     #link-logo-collapse {
-        border-bottom: 1px solid $default_color;
         display: none;
-        @media(max-width: 1170px){
-            display: block;
+        margin: 0 auto; 
+        
+        font-family: 'Arial', sans-serif;
+        font-weight: bold;
+        img {
+            max-width: 55%;
         }
+        @media(max-width: 1170px){
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+    }
+
+    .header-logo-contato {
+        transition: transform 0.2s; 
+
+        &:hover {
+            transform: translateY(-10px);
+        }
+    }
+}
+
+//botao faça reserva 
+.faca-reserva {
+    background: $default_color;
+    color: $text_white;
+    padding: 10px 0;
+    max-width: 200px;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    transition: transform 0.2s;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+
+    > img {
+        margin-right: 10px;
+    }
+
+    @media(max-width: 1170px){
+        padding: 10px 0; 
+        margin-top: 20px;
+    }
+}
+
+.display-none-1170 {
+    @media(max-width: 1170px){
+        display: none;
     }
 }

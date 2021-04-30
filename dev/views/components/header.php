@@ -23,11 +23,16 @@
         </div>
     </header>
     <nav class="header-menu" title="Hostel & House">
-        <a id="link-logo-collapse" href="/carlos-martins/house-hostel/"><img id="header-logo-collapse" src="dev/img/header/full-logo.png" alt="logo da empresa Hostel"></a>
+        <div id="link-logo-collapse">
+            <a href="/carlos-martins/house-hostel/"><img id="header-logo-collapse" src="dev/img/header/full-logo.png" alt="logo da empresa Hostel"></a>
+            <a class="header-logo-contato" href="#"><img src="dev/img/header/whats-icon.png" alt="logo do whatsapp"> (00) 0000-0000</a>
+            <a class="faca-reserva" href="#"><img src="dev/img/header/calendario.png" alt="imagem de um calendário">Faça sua Reserva</a>
+        </div>
+
         <button id="header-menu-button" type="button"></button>
         <div class="apresentacao">
             <div class="menu-contato">
-                <a href="#"><img src="dev/img/header/whats-icon.png" alt="logo do whatsapp"> (00) 0000-0000</a>
+                <a class="display-none-1170" href="#"><img src="dev/img/header/whats-icon.png" alt="logo do whatsapp"> (00) 0000-0000</a>
             </div>
             <ul class="menu-items1">
                 <li><a href=" <?= $home_url .'o-hostel.php' ?>">O HOSTEL</a></li>
@@ -38,7 +43,7 @@
         <a href="/carlos-martins/house-hostel/"><img id="header-logo" src="dev/img/header/full-logo.png" alt="logo da empresa Hostel"></a>
         <div class="reserva">
             <div class="menu-reserva">
-                <a id="faca-reserva" href="#"><img src="dev/img/header/calendario.png" alt="imagem de um calendário">Faça sua Reserva</a>
+                <a class="faca-reserva display-none-1170" href="#"><img src="dev/img/header/calendario.png" alt="imagem de um calendário">Faça sua Reserva</a>
             </div>
             <ul class="menu-items2">
                 <li><a href="#">O BLOG</a></li>

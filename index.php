@@ -103,9 +103,9 @@
                     </div>
                     <div class="contato-info">
                         <h2>Atendimento</h2>
-                        <span>Fone fax: (00)0000-0000</span>
-                        <span>contato@house&hostel.com.br</span>
-                        <span class="contato-atendimento-whatsapp"><img src="dist/img/header/whats-icon.png" alt="ícone do whatsapp">(00) 0000-0000</span>
+                        <a href="#">Fone fax: (00)0000-0000</a>
+                        <a href="#">contato@house&hostel.com.br</a>
+                        <a href="#" class="contato-atendimento-whatsapp"><img src="dist/img/header/whats-icon.png" alt="ícone do whatsapp">(00) 0000-0000</a>
                     </div>
                     </div>
                 <div class="contato-endereco">
@@ -114,8 +114,11 @@
                     </div>
                     <div class="contato-info">
                         <h2>Endereço</h2>
-                        <span>Avenida Miguel Stéfano, 4923</span>
-                        <span>Enseada, Guarujá.</span>
+                        <a 
+                            target="_blank"
+                            href="https://www.google.com/maps/place/House+Hostel+Guaruj%C3%A1/@-23.9886873,-46.2039534,17z/data=!4m18!1m9!3m8!1s0x94d201a1cef9bfff:0xa11857dee4076aa5!2sHouse+Hostel+Guaruj%C3%A1!5m2!4m1!1i2!8m2!3d-23.9885877!4d-46.2038534!3m7!1s0x94d201a1cef9bfff:0xa11857dee4076aa5!5m2!4m1!1i2!8m2!3d-23.9885877!4d-46.2038534"
+                        >
+                        Avenida Miguel Stéfano, 4923 <br> Enseada, Guarujá.</a>
                     </div>
                 </div>
                 <div class="contato-funcionamento">

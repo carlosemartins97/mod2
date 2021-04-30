@@ -47,7 +47,6 @@ $(document).ready(function(){
       });
 });
 
-
 //navbar responsiva
 $('#header-menu-button').click(function(){
   $('.apresentacao').slideToggle();
