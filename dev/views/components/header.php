@@ -14,20 +14,20 @@
     <header class="header">
         <div class="content-header">
             <div class="header-address">
-                <span><img src="dev/img/header/gps2.png" alt="Imagem de um 'markup' de localização."> Avenida Miguel Shifano, 4923, Enseada Guarujá</span>
+                <a href="#"><img src="dev/img/header/gps2.png" alt="Imagem de um 'markup' de localização."> Avenida Miguel Shifano, 4923, Enseada Guarujá</a>
                 <div class="header-address-contato">
-                    <a href="#"><img src="dev/img/header/face-icon.png" alt="logo do facebook"></a>
+                    <a href="#" id="logo-face"><img src="dev/img/header/face-icon.png" alt="logo do facebook"></a>
                     <a href="#" id="logo-insta"><img src="dev/img/header/insta-icon.png" alt="logo do instagram"></a>
                 </div>
             </div>
         </div>
     </header>
-    <nav class="header-menu">
+    <nav class="header-menu" title="Hostel & House">
         <a id="link-logo-collapse" href="/carlos-martins/house-hostel/"><img id="header-logo-collapse" src="dev/img/header/full-logo.png" alt="logo da empresa Hostel"></a>
         <button id="header-menu-button" type="button"></button>
         <div class="apresentacao">
             <div class="menu-contato">
-                <span><img src="dev/img/header/whats-icon.png" alt="logo do whatsapp"> (00) 0000-0000</span>
+                <a href="#"><img src="dev/img/header/whats-icon.png" alt="logo do whatsapp"> (00) 0000-0000</a>
             </div>
             <ul class="menu-items1">
                 <li><a href=" <?= $home_url .'o-hostel.php' ?>">O HOSTEL</a></li>

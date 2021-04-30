@@ -50,8 +50,8 @@ $(document).ready(function(){
 
 //navbar responsiva
 $('#header-menu-button').click(function(){
-  $('.apresentacao').fadeToggle();
-  $('.reserva').fadeToggle();
+  $('.apresentacao').slideToggle();
+  $('.reserva').slideToggle();
 });
 
 // slider acomodacoes
