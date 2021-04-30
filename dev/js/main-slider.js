@@ -10,15 +10,25 @@ $(document).ready(function(){
 $(document).ready(function(){
     $('.estrutura-slider').slick({
         centerMode: true,
-        centerPadding: '60px',
-        slidesToShow: 3,
+        slidesToShow: 5,
+        arrows: true,
+        infinite: true,
         prevArrow: $('.estrutura-buttons-prev'),
         nextArrow: $('.estrutura-buttons-next'),
         responsive: [
           {
+            breakpoint: 1170,
+            settings: {
+              arrows: true,
+              centerMode: true,
+              centerPadding: '40px',
+              slidesToShow: 3
+            }
+          },
+          {
             breakpoint: 768,
             settings: {
-              arrows: false,
+              arrows: true,
               centerMode: true,
               centerPadding: '40px',
               slidesToShow: 2
@@ -27,7 +37,7 @@ $(document).ready(function(){
           {
             breakpoint: 480,
             settings: {
-              arrows: false,
+              arrows: true,
               centerMode: true,
               centerPadding: '40px',
               slidesToShow: 1
@@ -36,6 +46,7 @@ $(document).ready(function(){
         ]
       });
 });
+
 
 //navbar responsiva
 $('#header-menu-button').click(function(){

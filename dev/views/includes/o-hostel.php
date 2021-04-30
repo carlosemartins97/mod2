@@ -17,7 +17,9 @@
 
                     <p>
                         Cuidadosamente planejado em uma área de mais de 130 mil m², com exuberantes jardins de inspiração oriental, proporciona o clima de paz e tranquilidade 
-                        ideal para fugir do stress da vida moderna. <br>
+                        ideal para fugir do stress da vida moderna.
+                    </p>
+                    <p>
                         Para quem procura um Hotel em meio à natureza com segurança e boa gastronomia contamos com uma completa infra estrutura, 96 amplas suítes com sacada privativa, 
                         uma área social de 400m², espaço para eventos com salas de convenções para até 350 
                         pessoas, restaurante com cozinha contemporânea, piscinas, centro fitness e as instalações do SPA com massagens, terapias, estética, hidromassagem e sauna.
@@ -30,20 +32,25 @@
                 </div>
             </div>
         </div>
-        <div class="conheca-estrutura-fotos">
-            <div class="estrutura-slider">
-                <img src="dist/img/conheca-estrutura/slider/q3.png" alt="Foto da sala">
-                <img src="dist/img/conheca-estrutura/slider/q2.png" alt="Foto do escritório">
-                <img src="dist/img/conheca-estrutura/slider/q4.png" alt="Foto do banheiro">
-                <img src="dist/img/conheca-estrutura/slider/q1.png" alt="Foto do quarto">
-            </div>
-            <div class="estrutura-moreinfo">
-                <h2 class="estrutura-moreinfo-titulo">House & Hostel</h2>
-                <a class="link-padrao" href="#">VER FOTOS</a>
-            </div>
-            <div class="estrutura-buttons">
-                <button class="estrutura-buttons-prev"><img src="dist/img/conheca-estrutura/slider/setas/left.png" alt="Seta indicando slide anterior."></button>
-                <button class="estrutura-buttons-next"><img src="dist/img/conheca-estrutura/slider/setas/right.png" alt="Seta indicando próximo slide."></button>
-            </div>
+        
+    </section>
+
+    <section class="conheca-estrutura-fotos">
+        <div class="estrutura-slider">
+            <img src="dist/img/conheca-estrutura/slider/q3.png" alt="Foto da sala">
+            <img src="dist/img/conheca-estrutura/slider/q4.png" alt="Foto do banheiro">
+            <img src="dist/img/conheca-estrutura/slider/q1.png" alt="Foto do quarto">
+            <img src="dist/img/conheca-estrutura/slider/q3.png" alt="Foto da sala">
+            <img src="dist/img/conheca-estrutura/slider/q1.png" alt="Foto do quarto">
+            <img src="dist/img/conheca-estrutura/slider/q2.png" alt="Foto do escritório">
+            
+        </div>
+        <div class="estrutura-moreinfo">
+            <h2 class="estrutura-moreinfo-titulo">House & Hostel</h2>
+            <a class="link-padrao" href="#">VER FOTOS</a>
+        </div>
+        <div class="estrutura-buttons">
+            <button class="estrutura-buttons-prev"><img src="dist/img/conheca-estrutura/slider/setas/left.png" alt="Seta indicando slide anterior."></button>
+            <button class="estrutura-buttons-next"><img src="dist/img/conheca-estrutura/slider/setas/right.png" alt="Seta indicando próximo slide."></button>
         </div>
     </section>
