@@ -40,7 +40,7 @@ $(document).ready(function(){
               arrows: true,
               centerMode: true,
               centerPadding: '40px',
-              slidesToShow: 1
+              slidesToShow: 2
             }
           }
         ]

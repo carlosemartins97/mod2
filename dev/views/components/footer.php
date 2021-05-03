@@ -9,7 +9,7 @@
 
     <footer>
         <div class="footer-content">
-            <p>House & Hostel - Todos os direitos reservados</p>
-            <a href="https://www.kbrtec.com.br/">Desenvolvido por KBRTEC</a>
+            <a href="#">House & Hostel - Todos os direitos reservados</a>
+            <a target="_blank" href="https://www.kbrtec.com.br/">Desenvolvido por KBRTEC</a>
         </div>
     </footer>

@@ -25,8 +25,6 @@
     <nav class="header-menu" title="Hostel & House">
         <div id="link-logo-collapse">
             <a href="/carlos-martins/house-hostel/"><img id="header-logo-collapse" src="dist/img/header/full-logo.png" alt="logo da empresa Hostel"></a>
-            <a class="header-logo-contato" href="#"><img src="dist/img/header/whats-icon.png" alt="logo do whatsapp"> (00) 0000-0000</a>
-            <a class="faca-reserva" href="#"><img src="dist/img/header/calendario.png" alt="imagem de um calendário">Faça sua Reserva</a>
         </div>
 
         <button id="header-menu-button" type="button"></button>
@@ -49,6 +47,11 @@
                 <li><a href="#">O BLOG</a></li>
                 <li><a href="#">LOCALIZAÇÃO</a></li>
                 <li><a href="#">CONTATOS</a></li>
+                
             </ul>
+            <div class="contato-reserva">
+                <a class="header-logo-contato" href="#"><img src="dist/img/header/whats-icon.png" alt="logo do whatsapp"> (00) 0000-0000</a>
+                <a class="faca-reserva" href="#"><img src="dist/img/header/calendario.png" alt="imagem de um calendário">Faça sua Reserva</a>
+            </div>
         </div>
     </nav>

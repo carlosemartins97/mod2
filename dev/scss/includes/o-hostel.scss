@@ -73,7 +73,6 @@
 
 
             > h1 {
-            font-size: 35px;
             letter-spacing: 2px;
             position: relative;
             padding-bottom: 25px;
@@ -88,6 +87,7 @@
                 border-bottom: 1px solid $default_color;
                 @media(max-width: 1170px){
                     left: 45%;
+                    
                 }
                 @media(max-width: 550px){
                     left: 40%;
@@ -119,12 +119,13 @@
 
 .conheca-estrutura-fotos {
     width: 80%;
-    margin: 80px 0;
+    margin: 80px 0 30px 0;
     margin-left: auto;
     position: relative;
 
     @media(max-width: 1170px){
         width: 100%;
+        margin: 30px 0;
     }
 
     .estrutura-moreinfo {
@@ -134,6 +135,7 @@
         left: 0;
         width: 20%;
         height: 100%;
+        text-align: center;
 
         display: flex;
         justify-content: center;
@@ -149,7 +151,7 @@
             width: 50%;
         }
         @media(max-width: 480px){
-            width: 100%;
+            width: 50%;
         }
 
     }
@@ -164,9 +166,14 @@
 
         .estrutura-buttons-next, .estrutura-buttons-prev {
             position: relative;
+            z-index: 3;
             border: unset;
             background: $default_color;
             padding: 15px 25px;
+            transition: background-color 0.2s;
+            &:hover {
+                background: $text_grey;
+            }
             @media(max-width: 990px){
                 padding: 10px 17.5px;
             }
@@ -180,15 +187,17 @@
             z-index: 0;
             
             top: 0%;
+            right: -14px;
+
             background: $default_color;
-            width: 100%;
+            width: 15px;
             height: 100%;
         }
 
         .estrutura-buttons-next::before {
             content: '';
             position: absolute;
-            z-index: 3;
+            z-index: 0;
 
             top: 25%;
             left: -5%;
@@ -205,6 +214,9 @@
 
     margin-bottom: 20px;
     display: block;
+        @media(max-width: 480px){
+            font-size: 16px;
+        }
     }
 
     //slider
