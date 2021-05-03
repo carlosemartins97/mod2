@@ -35,7 +35,6 @@
 
     .header-address-contato {
         display: flex;
-        position: relative;
 
         
 
@@ -44,20 +43,17 @@
         }
 
         #logo-face {
-            transition: filter 0.2s;
+            transition: transform 0.2s;
             &:hover {
-                filter: brightness(0.9); 
+                transform: scale(1.1); 
             } 
         }
 
         #logo-insta {
-            position: absolute;
-            left: 63%;
-            bottom: 15%;
             transition: filter 0.2s; 
 
             &:hover {
-                filter: brightness(0.9); 
+                transform: scale(1.1); 
             } 
         }
     }

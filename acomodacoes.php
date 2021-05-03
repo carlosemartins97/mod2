@@ -17,20 +17,75 @@
 
     <?php include_once('./dev/views/components/header.php') ?>
 
+    <?php 
+        $acomodacoes = array(
+            0=> array("nome"=>"Suíte Master", "features"=>array(
+                0=> "Cama de casal Queen",
+                1=> "Frigobar",
+                2=> "Varanda com vista pro mar",
+                3=> "Banheiro individual"
+            )),
+
+            1=> array("nome"=>"Suíte Simples", "features"=>array(
+                0=> "Acomodação para duas pessoas ou 1 pessoa(quarto individual)",
+                1=> "Cama de casal Queen",
+                2=> "Frigobar",
+                3=> "Banheiro individual"
+            )),
+
+            2=> array("nome"=>"Quarto coletivo com 3 beliches", "features"=>array(
+                0=> "Acomodação coletiva para até 6 pessoas",
+                1=> "3 beliches",
+                2=> "Frigobar",
+                3=> "Locker no quarto com 1 armazenamento para cada pessoa"
+            )),
+
+            3=> array("nome"=>"Quarto coletivo feminino com 3 beliches", "features"=>array(
+                0=> "Acomodação coletiva para até 6 pessoas",
+                1=> "3 beliches",
+                2=> "Frigobar",
+                3=> "Locker no quarto com 1 armazenamento para cada pessoa",
+                4=> "Banheiro coletivo no quarto com 1 sanitário privativo",
+                5=> "1 chuveiro com vestiário"
+            )),
+
+            4=> array("nome"=>"Quarto de coletivo com acessibilidade", "features"=>array(
+                0=> "Acomodação coletiva para até 6 pessoas",
+                1=> "3 beliches",
+                2=> "Frigobar",
+                3=> "Locker no quarto com 1 armazenamento para cada pessoa",
+                4=> "Banheiro coletivo no quarto com 1 sanitário e chuveiro com acessibilidade para deficiente",
+                5=> "1 chuveiro coletivo sem acessibilidade",
+                6=> "1 sanitário privativo com porta"
+            )),
+
+            5=> array("nome"=>"Quarto coletivo com 4 beliches", "features"=>array(
+                0=> "Acomodação coletiva para até 8 pessoas",
+                1=> "4 beliches",
+                2=> "Frigobar",
+                3=> "Locker no quarto com 1 armazenamento para cada pessoa"
+            ), "obs"=>array(
+                0=> "<br><span>Obs.:</span> no caso dos quartos coletivos com 3 e 4 beliches ambos terão 1 banheiro coletivo entre os dois para uso
+                de ambos, segue descrição do banheiro:"
+            )),
+        )
+    ?>
 
     <section class="pagina-acomodacoes">
     <div class="pagina-acomodacoes-content">
         <h1 class="sublinhar-titulo-centralizado">Acomodações</h1>
+
+        <?php foreach ($acomodacoes as $key => $acomodacao) { ?>
         <div class="card-acomodacoes">
             <div class="card-acomodacoes-slider">
-                <div id="slider-img-principal">
+                <div class="slider-img-principal">
                     <img src="dist/img/acomodacoes/suite-master.png" alt="Suíte master">
                     <img src="dist/img/acomodacoes/quarto-4.png" alt="Suíte master">
                     <img src="dist/img/acomodacoes/quarto-coletivo.png" alt="Suíte master">
                     <img src="dist/img/acomodacoes/banheiro.png" alt="Suíte master">
                 </div>
 
-                <div id="slider-img-carousel">
+                <div class="slider-img-carousel">
                     <img src="dist/img/acomodacoes/suite-master.png" alt="Suíte master">
                     <img src="dist/img/acomodacoes/quarto-4.png" alt="Suíte master">
                     <img src="dist/img/acomodacoes/quarto-coletivo.png" alt="Suíte master">
@@ -38,19 +93,18 @@
                 </div>
             </div>
             <div class="card-acomodacoes-info">
-                <h2 class="sublinhar-titulo">Suíte Master</h2>
+                <h2 class="sublinhar-titulo"> <?php echo $acomodacao["nome"]; ?> </h2>
                 <ul>
+                    <?php foreach ($acomodacao["features"] as $key => $feats) { ?>
                     <li>
-                        Frigobar
+                        <?php echo $feats ?>
                     </li>
-                    <li>
-                        Piscina
-                    </li>
+                    <?php } ?>
                 </ul>
-                <a class="link-padrao" href="#">RESERVAR AGORA</a>
+                <a class="link-padrao" href="/contato.php">RESERVAR AGORA</a>
             </div>
         </div>
-    
+        <?php } ?>
     </section>
 
 
