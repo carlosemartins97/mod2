@@ -54,94 +54,31 @@ $('#header-menu-button').click(function(){
 });
 
 // ----------- SLIDES PÁGINA ACOMODAÇÕES ---------
-$('#slide1').slick({
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  arrows: true,
-  fade: true,
-});
-$('#nav1').slick({
-  slidesToShow: 4,
-  slidesToScroll: 1,
-  dots: false,
-  asNavFor: '#slide1',
-  infinite: true,
-  focusOnSelect: true
-});
+var sliders = {
+  1: {slider : '#slide1', nav: '#nav1'},
+  2: {slider : '#slide2', nav: '#nav2'},
+  3: {slider : '#slide3', nav: '#nav3'},
+  4: {slider : '#slide4', nav: '#nav4'},
+  5: {slider : '#slide5', nav: '#nav5'},
+  6: {slider : '#slide6', nav: '#nav6'}
+};
 
-$('#slide2').slick({
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  arrows: true,
-  fade: true,
-});
-$('#nav2').slick({
-  slidesToShow: 4,
-  slidesToScroll: 1,
-  dots: false,
-  asNavFor: '#slide2',
-  infinite: true,
-  focusOnSelect: true
-});
+$.each(sliders, function() {
 
-$('#slide3').slick({
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  arrows: true,
-  fade: true,
-});
-$('#nav3').slick({
-  slidesToShow: 4,
-  slidesToScroll: 1,
-  dots: false,
-  asNavFor: '#slide3',
-  infinite: true,
-  focusOnSelect: true
-});
+  $(this.slider).slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    fade: true,
+  });
+  $(this.nav).slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    asNavFor: this.slider,
+    dots: false,
+    focusOnSelect: true
+  });
 
-$('#slide4').slick({
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  arrows: true,
-  fade: true,
-});
-$('#nav4').slick({
-  slidesToShow: 4,
-  slidesToScroll: 1,
-  dots: false,
-  asNavFor: '#slide4',
-  infinite: true,
-  focusOnSelect: true
-});
-
-$('#slide5').slick({
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  arrows: true,
-  fade: true,
-});
-$('#nav5').slick({
-  slidesToShow: 4,
-  slidesToScroll: 1,
-  dots: false,
-  asNavFor: '#slide5',
-  infinite: true,
-  focusOnSelect: true
-});
-
-$('#slide6').slick({
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  arrows: true,
-  fade: true,
-});
-$('#nav6').slick({
-  slidesToShow: 4,
-  slidesToScroll: 1,
-  dots: false,
-  asNavFor: '#slide6',
-  infinite: true,
-  focusOnSelect: true
 });
 
 
