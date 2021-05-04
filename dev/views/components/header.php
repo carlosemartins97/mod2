@@ -34,7 +34,7 @@
             </div>
             <ul class="menu-items1">
                 <li><a href=" <?= $home_url .'o-hostel.php' ?>">O HOSTEL</a></li>
-                <li><a href="#">ACOMODAÇÕES</a></li>
+                <li><a href="<?= $home_url .'acomodacoes.php' ?>">ACOMODAÇÕES</a></li>
                 <li><a href="#">FOTOS</a></li>
             </ul>
         </div>

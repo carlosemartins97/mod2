@@ -4,6 +4,23 @@
     width: 100%;
     margin-top: -50px;
     background: $grey-light-background;
+    position: relative;
+
+    .whats-flutuante {
+        position: fixed;
+        right: 0px;
+        top: 50%;
+        opacity: .7;
+        @media(max-width: 1070px){
+            right: -30px;
+            img {
+                width: 60%;
+                height: 60%;
+            }
+        }
+        
+    }
+
     .pagina-acomodacoes-content {
         width: 100%;
         max-width: 1170px;
@@ -197,4 +214,5 @@
             }
         }
     }
+
 }

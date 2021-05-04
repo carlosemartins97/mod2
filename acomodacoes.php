@@ -138,7 +138,7 @@
     ?>
 
     <section class="pagina-acomodacoes">
-    <div class="pagina-acomodacoes-content">
+        <div class="pagina-acomodacoes-content">
         <h1 class="sublinhar-titulo-centralizado">Acomodações</h1>
 
         <?php foreach ($acomodacoes as $key => $acomodacao) { ?>
@@ -169,6 +169,7 @@
             </div>
         </div>
         <?php } ?>
+        <a href="contato.php" class="whats-flutuante" ><img  src="dist/img/acomodacoes/contato/whatsapp.png" alt="Ícone do whatsapp"></a>
     </section>
 
 
