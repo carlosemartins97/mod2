@@ -49,7 +49,7 @@
                 <li><a href="#">CONTATOS</a></li>
                 
             </ul>
-            <div class="contato-reserva">
+            <div class="contato-reserva display-none-fullresolution">
                 <a class="header-logo-contato" href="#"><img src="dist/img/header/whats-icon.png" alt="logo do whatsapp"> (00) 0000-0000</a>
                 <a class="faca-reserva" href="#"><img src="dist/img/header/calendario.png" alt="imagem de um calendário">Faça sua Reserva</a>
             </div>

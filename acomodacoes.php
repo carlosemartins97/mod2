@@ -19,37 +19,85 @@
 
     <?php 
         $acomodacoes = array(
-            0=> array("nome"=>"Suíte Master", "features"=>array(
-                0=> "Cama de casal Queen",
-                1=> "Frigobar",
-                2=> "Varanda com vista pro mar",
-                3=> "Banheiro individual"
-            )),
+            0=> array(
+                "nome"=>"Suíte Master", 
+                "id"=>"slide1",
+                "nav"=>"nav1",
+                "features"=>array(
+                    0=> "Cama de casal Queen",
+                    1=> "Frigobar",
+                    2=> "Varanda com vista pro mar",
+                    3=> "Banheiro individual"
+                ), 
+                "imgs"=>array(
+                    0=> "dist/img/acomodacoes/suite-master.png",
+                    1=> "dist/img/acomodacoes/quarto-4.png",
+                    2=> "dist/img/acomodacoes/quarto-coletivo.png",
+                    3=> "dist/img/acomodacoes/banheiro.png"
+                    
+                )),
 
-            1=> array("nome"=>"Suíte Simples", "features"=>array(
+            1=> array(
+                "nome"=>"Suíte Simples", 
+                "id"=>"slide2",
+                "nav"=>"nav2",
+                "features"=>array(
                 0=> "Acomodação para duas pessoas ou 1 pessoa(quarto individual)",
                 1=> "Cama de casal Queen",
                 2=> "Frigobar",
                 3=> "Banheiro individual"
+            ),
+            "imgs"=>array(
+                0=> "dist/img/acomodacoes/suite-simples.png",
+                1=> "dist/img/acomodacoes/quarto-4.png",
+                2=> "dist/img/acomodacoes/quarto-coletivo.png",
+                3=> "dist/img/acomodacoes/banheiro.png"
+                
             )),
 
-            2=> array("nome"=>"Quarto coletivo com 3 beliches", "features"=>array(
+            2=> array(
+                "nome"=>"Quarto coletivo com 3 beliches", 
+                "id"=>"slide3",
+                "nav"=>"nav3",
+                "features"=>array(
                 0=> "Acomodação coletiva para até 6 pessoas",
                 1=> "3 beliches",
                 2=> "Frigobar",
                 3=> "Locker no quarto com 1 armazenamento para cada pessoa"
+            ),
+            "imgs"=>array(
+                0=> "dist/img/acomodacoes/quarto-coletivo.png",
+                1=> "dist/img/acomodacoes/quarto-4.png",
+                2=> "dist/img/acomodacoes/suite-simples.png",
+                3=> "dist/img/acomodacoes/banheiro.png"
+                
             )),
 
-            3=> array("nome"=>"Quarto coletivo feminino com 3 beliches", "features"=>array(
+            3=> array(
+                "nome"=>"Quarto coletivo feminino com 3 beliches", 
+                "id"=>"slide4",
+                "nav"=>"nav4",
+                "features"=>array(
                 0=> "Acomodação coletiva para até 6 pessoas",
                 1=> "3 beliches",
                 2=> "Frigobar",
                 3=> "Locker no quarto com 1 armazenamento para cada pessoa",
                 4=> "Banheiro coletivo no quarto com 1 sanitário privativo",
                 5=> "1 chuveiro com vestiário"
+            ),
+            "imgs"=>array(
+                0=> "dist/img/acomodacoes/quarto-4.png",
+                1=> "dist/img/acomodacoes/suite-master.png",
+                2=> "dist/img/acomodacoes/quarto-coletivo.png",
+                3=> "dist/img/acomodacoes/banheiro.png"
+                
             )),
 
-            4=> array("nome"=>"Quarto de coletivo com acessibilidade", "features"=>array(
+            4=> array(
+                "nome"=>"Quarto de coletivo com acessibilidade", 
+                "id"=>"slide5",
+                "nav"=>"nav5",
+                "features"=>array(
                 0=> "Acomodação coletiva para até 6 pessoas",
                 1=> "3 beliches",
                 2=> "Frigobar",
@@ -57,9 +105,20 @@
                 4=> "Banheiro coletivo no quarto com 1 sanitário e chuveiro com acessibilidade para deficiente",
                 5=> "1 chuveiro coletivo sem acessibilidade",
                 6=> "1 sanitário privativo com porta"
+            ),
+            "imgs"=>array(
+                0=> "dist/img/acomodacoes/banheiro.png",
+                1=> "dist/img/acomodacoes/quarto-4.png",
+                2=> "dist/img/acomodacoes/quarto-coletivo.png",
+                3=> "dist/img/acomodacoes/suite-simples.png"
+                
             )),
 
-            5=> array("nome"=>"Quarto coletivo com 4 beliches", "features"=>array(
+            5=> array(
+                "nome"=>"Quarto coletivo com 4 beliches", 
+                "id"=>"slide6",
+                "nav"=>"nav6",
+                "features"=>array(
                 0=> "Acomodação coletiva para até 8 pessoas",
                 1=> "4 beliches",
                 2=> "Frigobar",
@@ -67,6 +126,13 @@
             ), "obs"=>array(
                 0=> "<br><span>Obs.:</span> no caso dos quartos coletivos com 3 e 4 beliches ambos terão 1 banheiro coletivo entre os dois para uso
                 de ambos, segue descrição do banheiro:"
+            ),
+            "imgs"=>array(
+                0=> "dist/img/acomodacoes/quarto-coletivo2.png",
+                1=> "dist/img/acomodacoes/quarto-4.png",
+                2=> "dist/img/acomodacoes/quarto-coletivo.png",
+                3=> "dist/img/acomodacoes/banheiro.png"
+                
             )),
         )
     ?>
@@ -78,18 +144,16 @@
         <?php foreach ($acomodacoes as $key => $acomodacao) { ?>
         <div class="card-acomodacoes">
             <div class="card-acomodacoes-slider">
-                <div class="slider-img-principal">
-                    <img src="dist/img/acomodacoes/suite-master.png" alt="Suíte master">
-                    <img src="dist/img/acomodacoes/quarto-4.png" alt="Suíte master">
-                    <img src="dist/img/acomodacoes/quarto-coletivo.png" alt="Suíte master">
-                    <img src="dist/img/acomodacoes/banheiro.png" alt="Suíte master">
+                <div class="slider-img-principal" id="<?php echo $acomodacao["id"] ?>">
+                    <?php foreach ($acomodacao["imgs"] as $key => $img) { ?>
+                        <img src="<?php echo $img ?>" alt="Acomodação do House & Hostel.">
+                    <?php } ?>
                 </div>
 
-                <div class="slider-img-carousel">
-                    <img src="dist/img/acomodacoes/suite-master.png" alt="Suíte master">
-                    <img src="dist/img/acomodacoes/quarto-4.png" alt="Suíte master">
-                    <img src="dist/img/acomodacoes/quarto-coletivo.png" alt="Suíte master">
-                    <img src="dist/img/acomodacoes/banheiro.png" alt="Suíte master">
+                <div class="slider-img-carousel" id="<?php echo $acomodacao["nav"] ?>">
+                    <?php foreach ($acomodacao["imgs"] as $key => $img) { ?>
+                        <img src="<?php echo $img ?>" alt="Acomodação do House & Hostel.">
+                    <?php } ?>
                 </div>
             </div>
             <div class="card-acomodacoes-info">

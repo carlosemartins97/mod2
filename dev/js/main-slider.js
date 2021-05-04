@@ -53,19 +53,93 @@ $('#header-menu-button').click(function(){
   $('.reserva').slideToggle();
 });
 
-// slider acomodacoes
-$('.slider-img-principal').slick({
+// ----------- SLIDES PÁGINA ACOMODAÇÕES ---------
+$('#slide1').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
   arrows: true,
   fade: true,
-  asNavFor: '.slider-img-carousel'
 });
-$('.slider-img-carousel').slick({
+$('#nav1').slick({
   slidesToShow: 4,
   slidesToScroll: 1,
-  asNavFor: '.slider-img-principal',
   dots: false,
+  asNavFor: '#slide1',
+  infinite: true,
+  focusOnSelect: true
+});
+
+$('#slide2').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: true,
+  fade: true,
+});
+$('#nav2').slick({
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  dots: false,
+  asNavFor: '#slide2',
+  infinite: true,
+  focusOnSelect: true
+});
+
+$('#slide3').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: true,
+  fade: true,
+});
+$('#nav3').slick({
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  dots: false,
+  asNavFor: '#slide3',
+  infinite: true,
+  focusOnSelect: true
+});
+
+$('#slide4').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: true,
+  fade: true,
+});
+$('#nav4').slick({
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  dots: false,
+  asNavFor: '#slide4',
+  infinite: true,
+  focusOnSelect: true
+});
+
+$('#slide5').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: true,
+  fade: true,
+});
+$('#nav5').slick({
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  dots: false,
+  asNavFor: '#slide5',
+  infinite: true,
+  focusOnSelect: true
+});
+
+$('#slide6').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: true,
+  fade: true,
+});
+$('#nav6').slick({
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  dots: false,
+  asNavFor: '#slide6',
   infinite: true,
   focusOnSelect: true
 });

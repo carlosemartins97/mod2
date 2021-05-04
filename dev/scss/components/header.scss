@@ -68,6 +68,7 @@
 
     @media(max-width: 1170px){
         flex-direction: column;
+        padding-bottom: 35px;
     }
 
     #header-menu-button {
@@ -109,7 +110,7 @@
             margin: 20px 0;
             text-align: center;
             >:nth-child(n){
-                margin: 5px auto;
+                margin: 10px auto;
             }
         }
 
@@ -230,7 +231,6 @@
     justify-content: center;
     
     transition: transform 0.2s;
-    transition: color 0.2s;
 
     &:hover {
         transform: scale(1.1);
