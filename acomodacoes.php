@@ -169,7 +169,7 @@
             </div>
         </div>
         <?php } ?>
-        <a href="contato.php" class="whats-flutuante" ><img  src="dist/img/acomodacoes/contato/whatsapp.png" alt="Ícone do whatsapp"></a>
+        <?php include_once('./dev/views/components/whats-flutuante.php') ?>
     </section>
 
 
