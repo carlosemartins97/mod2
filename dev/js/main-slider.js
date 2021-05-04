@@ -80,8 +80,3 @@ $.each(sliders, function() {
   });
 
 });
-
-
-
-
-

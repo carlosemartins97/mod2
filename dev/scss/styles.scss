@@ -1,9 +1,16 @@
+
+//Páginas
 @import './pages/main.scss';
+@import './pages/acomodacoes.scss';
+@import './includes/o-hostel.scss';
+@import './pages/localizacao.scss';
+
+//includes
 @import './components/footer.scss';
 @import './components/header.scss';
-@import './includes/o-hostel.scss';
-@import './pages/acomodacoes.scss';
 @import './components/whats-flutuante.scss';
+
+//detalhes
 @import './utils/details.scss';
 @import './utils/variaveis.scss';
 
