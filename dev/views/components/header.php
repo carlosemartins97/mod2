@@ -7,8 +7,7 @@
 </head>
 <body>
     <?php 
-        $url =  "//{$_SERVER['HTTP_HOST']}{$_SERVER['REQUEST_URI']}";
-        $home_url = htmlspecialchars( $url, ENT_QUOTES, 'UTF-8' );
+        $base_url = '/carlos-martins/house-hostel'
     ?>
     
     <header class="header">
@@ -33,8 +32,8 @@
                 <a class="display-none-1170" href="#"><img src="dist/img/header/whats-icon.png" alt="logo do whatsapp"> (00) 0000-0000</a>
             </div>
             <ul class="menu-items1">
-                <li><a href=" <?= $home_url .'o-hostel.php' ?>">O HOSTEL</a></li>
-                <li><a href="<?= $home_url .'acomodacoes.php' ?>">ACOMODAÇÕES</a></li>
+                <li><a href=" <?= $base_url .'/o-hostel.php' ?>">O HOSTEL</a></li>
+                <li><a href="<?= $base_url .'/acomodacoes.php' ?>">ACOMODAÇÕES</a></li>
                 <li><a href="#">FOTOS</a></li>
             </ul>
         </div>
@@ -45,7 +44,7 @@
             </div>
             <ul class="menu-items2">
                 <li><a href="#">O BLOG</a></li>
-                <li><a href="#">LOCALIZAÇÃO</a></li>
+                <li><a href="<?= $base_url .'/localizacao.php' ?>">LOCALIZAÇÃO</a></li>
                 <li><a href="#">CONTATOS</a></li>
                 
             </ul>

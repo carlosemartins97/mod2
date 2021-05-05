@@ -15,6 +15,7 @@
     <?php include_once('./dev/views/components/header.php') ?>
     
     <section class="localizacao-container">
+        <?php include_once('./dev/views/components/whats-flutuante.php') ?>
         <div class="localizacao-content">
             <h1>Localização</h1>
             <a 
@@ -27,6 +28,7 @@
             </iframe><a href="https://www.online-timer.net"></a>
             </div>
         </div>
+        
     </section>
     
     <?php include_once('./dev/views/components/footer.php') ?>
