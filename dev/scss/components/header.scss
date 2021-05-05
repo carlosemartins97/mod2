@@ -68,7 +68,7 @@
 
     @media(max-width: 1170px){
         flex-direction: column;
-        padding-bottom: 35px;
+        padding-bottom: 5px;
     }
 
     #header-menu-button {
@@ -243,16 +243,5 @@
     @media(max-width: 1170px){
         padding: 10px 0; 
         margin-top: 20px;
-    }
-}
-
-.display-none-1170 {
-    @media(max-width: 1170px){
-        display: none;
-    }
-}
-.display-none-fullresolution {
-    @media(min-width: 1170px){
-        display: none;
     }
 }

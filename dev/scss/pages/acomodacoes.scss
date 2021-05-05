@@ -2,9 +2,27 @@
 
 .pagina-acomodacoes {
     width: 100%;
-    margin-top: -50px;
+    margin-top: 0;
     background: $grey-light-background;
     position: relative;
+
+    h1 {
+        text-align: center;
+        position: relative;
+        margin-bottom: 30px;
+        padding-top: 30px;
+        text-transform: uppercase;
+        margin: 0;
+        &::after {
+            left: 48%;
+            @media(max-width: 1170px){
+                left: 47%;
+            }
+            @media(max-width: 550px){
+                left: 40%;
+            }
+        }
+    }
 
     .pagina-acomodacoes-content {
         width: 100%;
@@ -12,21 +30,30 @@
         margin: 0 auto;
         padding: 50px 0 60px 0;
 
-        h1 {
-            text-align: center;
-            position: relative;
-            margin-bottom: 30px;
-        }
+        
+
+        
 
         .card-acomodacoes {
             background: $text_white;
             display: flex;
             
-            padding: 20px 20px;
+            padding: 20px;
             min-height: 240px;
+
+            @media(max-width: 1170px){
+                padding: 5px;
+                width: 400px;
+            }
+            @media(max-width: 400px){
+                width:auto;
+            }
 
             & + .card-acomodacoes {
                 margin-top: 20px;
+                @media(max-width: 1170px){
+                    margin-top: unset;
+                }
             }
 
             .card-acomodacoes-slider {
@@ -54,13 +81,19 @@
 
                     .slick-arrow {
                         background: rgba(255,255,255,0.7);
+                        border: 2px solid rgba(255,255,255,0);
+
                         height: 30px;
                         width: 30px;
                         
                         border-radius: unset;
+                        transition: border-color 0.2s;
+                        &:hover {
+                            border-color: $default_color;
+                        }
+
                         &::after, &::before {
                             background: transparent; 
-                            
                             border-radius: 0;
                         }
                         &::before {
@@ -84,7 +117,7 @@
                             display: none;
                         }
                     }
-                    @media(max-width: 1070px){
+                    @media(max-width: 1170px){
                         margin: 20px auto;
                     }
                 
@@ -92,41 +125,31 @@
                 .slider-img-carousel > .slick-list.draggable > .slick-track  {
                     width: 100%;
                     height: 100%;
-                    @media(max-width: 1070px){
-                        display: flex;
-                        justify-content: center;
+                    display: flex;
+                    justify-content: space-between;
+                    @media(max-width: 1170px){
+                        justify-content: space-around;
+                        width: 50%;
                     }
                     
+                }
+                .slider-img-carousel, .slick-list.draggable > .slick-track {
+                    @media(max-width: 1170px){
+                        width: 325px;
+                        margin: 0 auto;
+                        justify-content: space-between !important;
+                    }
                 }
 
                 .slider-img-carousel {
-                    
                     img {
-                        max-width: 68px;
-                        max-height: 58px;
-
-                        & + img {
-                            margin-left: 9px;
-                        }
-                        @media(max-width: 1070px){
-                            max-width: 130px;
-                            max-height: 100px;
-                        }
-                        @media(max-width: 510px){
-                            width: 20% !important;
-                            height: 20% !important;
-                        }
-                    }
-                    @media(max-width: 1070px){
-                        max-width: 100%;
-                        max-height: 200px;
+                        width: 65px !important;
+                        height: 50px !important;
+                        object-fit: fill;
                     }
                 }
-
-                
-
-                
             }
+        
 
             .card-acomodacoes-info {
                 padding: 5px 20px 15px 20px;
@@ -138,9 +161,13 @@
                 h2 {
                     position: relative;
                     padding-bottom: 5px;
+                    text-transform: uppercase;
                     &::after {
-                        @media(max-width: 1070px){
-                            left: 48%;
+                        @media(max-width: 1170px){
+                            left: 40%;
+                        }
+                        @media(max-width: 550px){
+                            left: 40%;
                         }
                     }
                 }
@@ -164,12 +191,16 @@
                             color: $default_color /* cor da bolinha */
                         }
                     }
+                    @media(max-width: 1170px){
+                        padding-bottom: 0;
+                    }
                 }
 
                 a {
                     margin: 0;
                 }
-                @media(max-width: 1070px){
+                @media(max-width: 1170px){
+                    padding-bottom: 0;
                     h2, ul {
                         display: block;
                         width: 100%;
@@ -184,20 +215,38 @@
                     }
                 }
                 @media(max-width: 550px){
-                    h2,ul {
-                        text-align: left;
-                    }
+                    
                     a {
-                        width: 100%;
-                        margin: unset;
+                        
                         text-align: center;
                     }
                 }
+                .card-observacoes-texto {
+                    margin-top: 10px;
+                }
+                .card-observacoes-itens {
+                    display: block;
+                    padding-top: 0;
+                }
             }
-            @media(max-width: 1070px){
-                flex-direction: column;
+            @media(max-width: 1170px){
+                flex-direction: column-reverse;
+                .link-padrao {
+                    margin: 20px auto;
+                    order: -1;
+                }
             }
         }
+        @media(max-width: 1170px){
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-items: center;
+            row-gap: 30px;
+        }
+        @media(max-width: 880px){
+            grid-template-columns: 1fr;
+        }
+        
     }
 
 }

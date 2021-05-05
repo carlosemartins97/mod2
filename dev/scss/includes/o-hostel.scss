@@ -13,7 +13,6 @@
         .apresentacao-container {
         
         display: flex;
-        margin-top: 50px;
         margin-bottom: 40px;
         padding: 0 10px;
 
@@ -52,7 +51,6 @@
                 letter-spacing: 4px;
                 font-weight: 300;
                 width: 100%;
-                margin-top: 30px;
                 @media(max-width: 550px){
                     display: block;
                     text-align: center;
@@ -148,7 +146,7 @@
             width: 33.3%;
         }
         @media(max-width: 768px){
-            width: 50%;
+            width: 33.33%;
         }
         @media(max-width: 480px){
             width: 50%;

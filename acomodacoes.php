@@ -124,8 +124,10 @@
                 2=> "Frigobar",
                 3=> "Locker no quarto com 1 armazenamento para cada pessoa"
             ), "obs"=>array(
-                0=> "<br><span>Obs.:</span> no caso dos quartos coletivos com 3 e 4 beliches ambos terão 1 banheiro coletivo entre os dois para uso
-                de ambos, segue descrição do banheiro:"
+                    "2 chuveiros com vestiários embutidos",
+                    "1 sanitário privativo com porta",
+                    "1 pia dupla com espelho",
+                    "1 mictório"
             ),
             "imgs"=>array(
                 0=> "dist/img/acomodacoes/quarto-coletivo2.png",
@@ -138,10 +140,10 @@
     ?>
 
     <section class="pagina-acomodacoes">
-        <div class="pagina-acomodacoes-content">
         <h1 class="sublinhar-titulo-centralizado">Acomodações</h1>
+        <div class="pagina-acomodacoes-content">
 
-        <?php foreach ($acomodacoes as $key => $acomodacao) { ?>
+        <?php foreach ($acomodacoes as $i => $acomodacao) { ?>
         <div class="card-acomodacoes">
             <div class="card-acomodacoes-slider">
                 <div class="slider-img-principal" id="<?php echo $acomodacao["id"] ?>">
@@ -158,15 +160,44 @@
             </div>
             <div class="card-acomodacoes-info">
                 <h2 class="sublinhar-titulo"> <?php echo $acomodacao["nome"]; ?> </h2>
-                <ul>
-                    <?php foreach ($acomodacao["features"] as $key => $feats) { ?>
-                    <li>
-                        <?php echo $feats ?>
-                    </li>
-                    <?php } ?>
-                </ul>
-                <a class="link-padrao" href="/contato.php">RESERVAR AGORA</a>
+                <?php if($acomodacoes[5] == $acomodacao) { ?>
+                    <ul>
+                        <?php foreach ($acomodacao["features"] as $key => $feats) { ?>
+                            <li>
+                                <?php echo $feats ?>
+                            </li>
+                        <?php } ?>
+                            
+                            <p class="card-observacoes-texto">
+                                <strong>Obs.:</strong> no caso dos quartos coletivos com 3 e 4 beliches ambos 
+                                terão 1 banheiro coletivo entre os dois para uso de ambos, segue descrição do banheiro:
+                            </p>
+                            
+                            <p class="card-observacoes-texto">
+                                Banheiro coletivo (dois banheiros coletivos, hum para cada 2 quartos):
+                            </p>
+                            <ul class="card-observacoes-itens">
+                                <?php foreach ($acomodacao["obs"] as $key => $obs) { ?>
+                                    <li>
+                                        <?= $obs ?>
+                                    </li>
+                                <?php } ?>
+                            </ul>
+                    </ul>
+                <?php } else {?>
+                    <ul>
+                        <?php foreach ($acomodacao["features"] as $key => $feats) { ?>
+                            <li>
+                                <?php echo $feats ?>
+                            </li>
+                        <?php } ?>
+                    </ul>
+                <?php } ?>
+
+                
+                <a class="link-padrao display-none-1170" href="/contato.php">RESERVAR AGORA</a>
             </div>
+            <a class="link-padrao display-none-fullresolution" href="/contato.php">RESERVAR AGORA</a>
         </div>
         <?php } ?>
         <?php include_once('./dev/views/components/whats-flutuante.php') ?>
