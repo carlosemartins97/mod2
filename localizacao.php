@@ -24,8 +24,9 @@
             >Avenida Miguel Stéfano, 4924, Enseada Guarujá</a>
         </div>
 
-        <div class="mapouter"><div class="gmap_canvas"><iframe id="gmap_canvas" src="https://maps.google.com/maps?q=%20Avenida%20Miguel%20Estefno%20-%20Loteamento%20Joao%20Batista%20Juliao,%20Guaruj%C3%A1%20-%20SP&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
-            </iframe><a href="https://www.online-timer.net"></a>
+        <div class="mapouter">
+            <div class="gmap_canvas">
+                <iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=-23.988588935623042,%20-46.20382793585921&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
             </div>
         </div>
         
