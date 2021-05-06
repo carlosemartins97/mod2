@@ -34,7 +34,7 @@
             <ul class="menu-items1">
                 <li><a href=" <?= $base_url .'/o-hostel.php' ?>">O HOSTEL</a></li>
                 <li><a href="<?= $base_url .'/acomodacoes.php' ?>">ACOMODAÇÕES</a></li>
-                <li><a href="#">FOTOS</a></li>
+                <li><a href=" <?= $base_url .'/fotos.php' ?>">FOTOS</a></li>
             </ul>
         </div>
         <a href="/carlos-martins/house-hostel/"><img id="header-logo" src="dist/img/header/full-logo.png" alt="logo da empresa Hostel"></a>
