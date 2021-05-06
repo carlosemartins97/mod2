@@ -150,6 +150,9 @@
                         height: 50px !important;
                         object-fit: fill;
                         cursor: pointer;
+                        &:hover {
+                            filter: brightness(0.8);
+                        }
                     }
                 }
             }

@@ -1,0 +1,83 @@
+@import '../utils/variaveis.scss';
+
+.fotos-container {
+    width: 100%;
+    background: $grey-light-background;
+    padding: 40px 10px;
+    .fotos-content {
+        max-width: 1170px;
+        margin: 0 auto;
+        h1 {
+            position: relative;
+            padding-bottom: 20px;
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 4rem;
+                border-bottom: 3px solid $default_color;
+            }
+        }
+
+        .fotos-grid {
+            margin-top: 40px;
+            display: flex;
+            flex-wrap: wrap;
+            position: relative;
+            div {
+                position: relative;
+                cursor: pointer;
+                height: 370px;
+                display: flex;
+                flex: 1;
+                
+                .fotos-grid-normal, .fotos-grid-maior {
+                    flex: 1;            
+                }
+    
+                .fotos-grid-maior, .fotos-grid-normal {
+                    &:hover ~ .ampliar-imagem {
+                        opacity: 1;
+                    }
+                }
+
+                .ampliar-imagem {
+                    opacity: 0;
+
+                    transition: opacity 0.3s;
+                
+                    position: absolute;
+                    width: fit-content;
+                    top: 0;
+                    
+                    background: rgba(0,0,0,0.7);
+                
+                    height:100%;
+                    width: 100%;
+                    
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                
+                    h2 {
+                        color: $text_white;
+                        font-size: 1.5rem;
+                        letter-spacing: 4px;
+                        font-weight: 300;
+                        margin-bottom: 10px;
+                    }
+                    &:hover {
+                        opacity: 1;
+                    }
+                }
+    
+                
+            }
+            @media(max-width: 1170px){
+                display: none;
+            }
+        }
+    }
+}
+
