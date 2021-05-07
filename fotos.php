@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fotos - House & Hostel</title>
 
+    <!-- Plugin lightbox -->
+    <link href="dist/css/utils/lity.css" rel="stylesheet">
+
     <link rel="stylesheet" tpe="text/css" href="dist/css/styles.css">
 </head>
 <body>
@@ -59,7 +62,7 @@
                         <img class="<?= $fotos["class"][$key] ?>" src="<?= $foto ?>" alt="<?= $fotos["descricao"][$key] ?>">
                         <div class="ampliar-imagem">
                             <h2 >House & Hostel</h2>
-                            <a class="link-padrao" href="#">AMPLIAR IMAGEM</a>
+                            <a data-lity data-lity-target="<?= $foto ?>" class="link-padrao" href="#">AMPLIAR IMAGEM</a>
                         </div>
                     </div>
                 <?php } ?>
@@ -73,6 +76,7 @@
     
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="dev/js/lity.js"></script>
     
 </body>
 </html>
