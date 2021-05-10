@@ -72,7 +72,7 @@
             <?php foreach($posts as $key => $post) { ?>
             <div class="blog-card">
                 <div class="blog-card-img">
-                    <img src="<?= $post["img"] ?>" alt="teste">
+                    <img src="<?= $post["img"] ?>" alt="<?= $post["img"]?>">
                     <div class="blog-card-contato">
                         <a href="#"><img src="dist/img/blog/icons/face.png" alt="Logo do facebook"></a>
                         <a href="#"><img src="dist/img/blog/icons/insta.png" alt="Logo do instagram"></a>

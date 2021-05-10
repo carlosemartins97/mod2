@@ -1,0 +1,76 @@
+@import '../utils/variaveis.scss';
+
+.blog-integra-container {
+    width: 100%;
+    background: $grey-light-background;
+    padding: 50px 20px;
+    .blog-integra-content {
+        padding: 50px 100px;
+        max-width: 1170px;
+        width: 100%;
+        margin: 0 auto;
+        background: $text_white;
+        > span, h1 {
+            text-align: center;
+            display: block;
+        }
+        > span {
+            font-family: 'Arial', sans-serif;
+            font-size: 0.8rem;
+            color: $default_color;
+        }
+        h1 {
+            font-size: 1.9rem;
+            font-weight: normal;
+        }
+        .blog-integra-social {
+            text-align: center;
+            margin: 30px 0;
+            >:first-child {
+                margin-right: 10px;
+            }
+            a {
+                & + a {
+                    margin-left: 10px;
+                }
+                img {
+                    transition: transform 0.3s;
+                }
+                &:hover img {
+                    transform: scale(1.2);
+                }
+            }
+        }
+        > img {
+            max-width: 100%;
+            max-height: 500px;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        p {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 1rem;
+            margin: 30px 0;
+        }
+
+        h2 {
+            font-weight: normal;
+            letter-spacing: 0.75px;
+
+            > span {
+                color: $default_color;
+                
+            }
+        }
+        @media(max-width: 1170px){
+            padding: 40px 60px;
+        }
+        @media(max-width: 768px){
+            padding: 20px 15px;
+        }
+    }
+    @media(max-width: 550px){
+        padding: 30px 10px;
+    }
+}
