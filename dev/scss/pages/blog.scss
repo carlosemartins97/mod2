@@ -1,6 +1,7 @@
 @import '../utils/variaveis.scss';
 
 .blog-container {
+    position: relative;
     background: $grey-light-background;
     width: 100%;
     padding: 50px 0;

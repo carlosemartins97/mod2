@@ -20,6 +20,43 @@
 
 </head>
 <body>
+
+    <?php 
+        $posts = array(
+            0=> array(
+                "titulo"=>"O Verão está chegando. Que tal vista para o mar?",
+                "descricao"=>"Phasellus portasce susct vus mi. Cum sociis nat pentibus et magnis dis parturient montnascetur  ridiculus mus. 
+                Nulla dui. Fusce feugiat malesuada odio. Morbi nunc odio gravida atcursus nec luctus a lorem Maecenas.
+                tristique orci ac sem. Mauris fermentum dictum magna. Sed laoreet aliquam leo.",
+                "data"=>"13/08/2018",
+                "img"=>"dist/img/blog/noticias/4.png"
+            ),
+            1=> array(
+                "titulo"=>"Principais Bares e Restaurantes em Santos",
+                "descricao"=>"Phasellus portasce susct vus mi. Cum sociis nat pentibus et magnis dis parturient montnascetur  ridiculus mus. 
+                Nulla dui. Fusce feugiat malesuada odio. Morbi nunc odio gravida atcursus nec luctus a lorem Maecenas.
+                tristique orci ac sem. Mauris fermentum dictum magna. Sed laoreet aliquam leo.",
+                "data"=>"13/08/2018",
+                "img"=>"dist/img/blog/noticias/1.png"
+            ),
+            2=> array(
+                "titulo"=>"Economia na Hora de Hospedar sua Família",
+                "descricao"=>"Phasellus portasce susct vus mi. Cum sociis nat pentibus et magnis dis parturient montnascetur  ridiculus mus. 
+                Nulla dui. Fusce feugiat malesuada odio. Morbi nunc odio gravida atcursus nec luctus a lorem Maecenas.
+                tristique orci ac sem. Mauris fermentum dictum magna. Sed laoreet aliquam leo.",
+                "data"=>"13/08/2018",
+                "img"=>"dist/img/blog/noticias/2.png"
+            ),
+            3=> array(
+                "titulo"=>"Como avaliar os serviços de um bom hotel para se hospedar?",
+                "descricao"=>"Phasellus portasce susct vus mi. Cum sociis nat pentibus et magnis dis parturient montnascetur  ridiculus mus. 
+                Nulla dui. Fusce feugiat malesuada odio. Morbi nunc odio gravida atcursus nec luctus a lorem Maecenas.
+                tristique orci ac sem. Mauris fermentum dictum magna. Sed laoreet aliquam leo.",
+                "data"=>"13/08/2018",
+                "img"=>"dist/img/blog/noticias/3.png"
+            ),
+        )
+    ?>
     
     <?php include_once('./dev/views/components/header.php') ?>
 
@@ -32,44 +69,24 @@
                     <button type="button">Buscar</button> <!-- type 'button' só por enquanto -->
                 </form>
             </div>
+            <?php foreach($posts as $key => $post) { ?>
             <div class="blog-card">
                 <div class="blog-card-img">
-                    <img src="dist/img/acomodacoes/suite-master.png" alt="teste">
+                    <img src="<?= $post["img"] ?>" alt="teste">
                     <div class="blog-card-contato">
                         <a href="#"><img src="dist/img/blog/icons/face.png" alt="Logo do facebook"></a>
                         <a href="#"><img src="dist/img/blog/icons/insta.png" alt="Logo do instagram"></a>
                     </div>
                 </div>
                 <div class="blog-card-info">
-                    <span>13/08/2018</span>
-                    <h2 class="sublinhar-titulo">O Verão está chegando. Que tal vista para o mar?</h2>
-                    <p>
-                        Phasellus portasce susct vus mi. Cum sociis nat pentibus et magnis dis parturient montnascetur  ridiculus mus. 
-                        Nulla dui. Fusce feugiat malesuada odio. Morbi nunc odio gravida atcursus nec luctus a lorem Maecenas.
-                        tristique orci ac sem. Mauris fermentum dictum magna. Sed laoreet aliquam leo.
-                    </p>
+                    <span><?= $post["data"] ?></span>
+                    <h2 class="sublinhar-titulo"><?= $post["titulo"] ?></h2>
+                    <p><?= $post["descricao"] ?></p>
                     <a href="#">Continue lendo &#8594;</a>
                 </div>
             </div>
-            <div class="blog-card">
-                <div class="blog-card-img">
-                    <img src="dist/img/acomodacoes/suite-master.png" alt="teste">
-                    <div class="blog-card-contato">
-                        <a href="#"><img src="dist/img/blog/icons/face.png" alt="Logo do facebook"></a>
-                        <a href="#"><img src="dist/img/blog/icons/insta.png" alt="Logo do instagram"></a>
-                    </div>
-                </div>
-                <div class="blog-card-info">
-                    <span>13/08/2018</span>
-                    <h2 class="sublinhar-titulo">O Verão está chegando. Que tal vista para o mar?</h2>
-                    <p>
-                        Phasellus portasce susct vus mi. Cum sociis nat pentibus et magnis dis parturient montnascetur  ridiculus mus. 
-                        Nulla dui. Fusce feugiat malesuada odio. Morbi nunc odio gravida atcursus nec luctus a lorem Maecenas.
-                        tristique orci ac sem. Mauris fermentum dictum magna. Sed laoreet aliquam leo.
-                    </p>
-                    <a href="#">Continue lendo &#8594;</a>
-                </div>
-            </div>
+            <?php } ?>
+
             <div class="blog-pagination">
                 <button id="pagination-prev">Anterior</button>
                 <a class="pagination-page" href="#">1</a>
@@ -78,6 +95,7 @@
                 <button id="pagination-next">Próximo</button>
             </div>
         </div>
+        <?php include_once('./dev/views/components/whats-flutuante.php') ?>
     </section>
 
     <?php include_once('./dev/views/components/footer.php') ?>
