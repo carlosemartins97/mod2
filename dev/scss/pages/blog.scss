@@ -114,12 +114,7 @@
                     padding-top: 10px;
 
                     a {
-                        img {
-                            transition: transform 0.3s;
-                        }
-                        &:hover img{
-                            transform: scale(1.2);
-                        }
+                        border-radius: 50%;
                         & + a {
                             margin-left: 10px;
                         }

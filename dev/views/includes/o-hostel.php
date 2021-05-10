@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>O Hostel - House & Hostel</title>
 </head>
-<body>
+<body onload="slickHome()">
 
     <section class="conheca-estrutura-container">
         <div class="conheca-estrutura-content">
