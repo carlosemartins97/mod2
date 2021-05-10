@@ -14,7 +14,7 @@
 
     <title>House & Hostel</title>
 </head>
-<body>
+<body onload="slickHome()">
     <?php include_once('./dev/views/components/header.php') ?>
 
     <section class="carousel">

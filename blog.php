@@ -12,14 +12,15 @@
     <link rel="stylesheet" tpe="text/css" href="dist/css/styles.css">
 
     <link rel="stylesheet" tpe="text/css" href="dist/css/utils/jssocials.css">
-    <link rel="stylesheet" tpe="text/css" href="dist/css/utils/jssocials-theme-flat.css">;
+    <link rel="stylesheet" tpe="text/css" href="dist/css/utils/jssocials-theme-flat.css">
 
-    
+    <!-- fontes -->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;500;700&display=swap" rel="stylesheet">
+    
 
 </head>
-<body>
+<body onload="socials()">
 
     <?php 
         $posts = array(
@@ -58,6 +59,10 @@
         )
     ?>
     
+    <?php 
+        $base_url = '/carlos-martins/house-hostel'
+    ?>
+
     <?php include_once('./dev/views/components/header.php') ?>
 
     <section class="blog-container">
@@ -73,16 +78,14 @@
             <div class="blog-card">
                 <div class="blog-card-img">
                     <img src="<?= $post["img"] ?>" alt="<?= $post["img"]?>">
-                    <div class="blog-card-contato">
-                        <a href="#"><img src="dist/img/blog/icons/face.png" alt="Logo do facebook"></a>
-                        <a href="#"><img src="dist/img/blog/icons/insta.png" alt="Logo do instagram"></a>
-                    </div>
+
+                    <div class="blog-card-contato blog-integra-social"></div>
                 </div>
                 <div class="blog-card-info">
                     <span><?= $post["data"] ?></span>
                     <h2 class="sublinhar-titulo"><?= $post["titulo"] ?></h2>
                     <p><?= $post["descricao"] ?></p>
-                    <a href="#">Continue lendo &#8594;</a>
+                    <a href="<?= $base_url."/blog-integra.php" ?>">Continue lendo &#8594;</a>
                 </div>
             </div>
             <?php } ?>
@@ -102,6 +105,7 @@
     
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://kit.fontawesome.com/5ced3d7c26.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="dev/js/main-slider.js"></script>
     <script src="dev/js/jssocials.min.js"></script>
 </body>

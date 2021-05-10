@@ -13,7 +13,7 @@
 
     <title>Acomodações - House & Hostel</title>
 </head>
-<body>
+<body onload="slickAcomodacao()">
 
     <?php include_once('./dev/views/components/header.php') ?>
 

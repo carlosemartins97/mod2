@@ -19,7 +19,7 @@
     <!-- Main css -->
     <link rel="stylesheet" tpe="text/css" href="dist/css/styles.css">
 </head>
-<body>
+<body onload="slickFotos()">
     <?php 
         $fotos = array(
             "imagens"=>array(

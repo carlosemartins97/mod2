@@ -1,13 +1,11 @@
-//Slider principal da home
-$(document).ready(function(){
-    $('.carousel').slick({
-        arrows: false,
-        dots: true,
-    });
-});
 
-//Slider conheça nossa estrutura - home
-$(document).ready(function(){
+//Sliders - home
+function slickHome(){
+    $('.carousel').slick({
+      arrows: false,
+      dots: true,
+    });
+
     $('.estrutura-slider').slick({
         centerMode: true,
         slidesToShow: 5,
@@ -45,7 +43,7 @@ $(document).ready(function(){
           }
         ]
       });
-});
+};
 
 //navbar responsiva
 $('#header-menu-button').click(function(){
@@ -54,36 +52,38 @@ $('#header-menu-button').click(function(){
 });
 
 // ----------- SLIDES PÁGINA ACOMODAÇÕES ---------
-var sliders = {
-  1: {slider : '#slide1', nav: '#nav1'},
-  2: {slider : '#slide2', nav: '#nav2'},
-  3: {slider : '#slide3', nav: '#nav3'},
-  4: {slider : '#slide4', nav: '#nav4'},
-  5: {slider : '#slide5', nav: '#nav5'},
-  6: {slider : '#slide6', nav: '#nav6'}
-};
-
-$.each(sliders, function() {
-
-  $(this.slider).slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: true,
-    fade: true,
+function slickAcomodacao(){
+  var sliders = {
+    1: {slider : '#slide1', nav: '#nav1'},
+    2: {slider : '#slide2', nav: '#nav2'},
+    3: {slider : '#slide3', nav: '#nav3'},
+    4: {slider : '#slide4', nav: '#nav4'},
+    5: {slider : '#slide5', nav: '#nav5'},
+    6: {slider : '#slide6', nav: '#nav6'}
+  };
+  
+  $.each(sliders, function() {
+  
+    $(this.slider).slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: true,
+      fade: true,
+    });
+    $(this.nav).slick({
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      asNavFor: this.slider,
+      dots: false,
+      focusOnSelect: true
+    });
+  
   });
-  $(this.nav).slick({
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    asNavFor: this.slider,
-    dots: false,
-    focusOnSelect: true
-  });
-
-});
+}
 
 
 //Slide fotos
-$(document).ready(function(){
+function slickFotos(){
   $('.fotos-slider').slick({
       slidesToShow: 4,
       arrows: true,
@@ -114,17 +114,15 @@ $(document).ready(function(){
         }
       ]
     });
-});
+};
 
 
 // Página do Blog
-$(".blog-card-contato").jsSocials({
-  showLabel: true,
-  shares: [{
-      share: "facebook",
-      logo: "http://ambiente-desenvolvimento.provisorio.ws/carlos-martins/house-hostel/dist/img/blog/icons/face.png"
-  }, {
-      share: "instagram",
-      logo: "http://ambiente-desenvolvimento.provisorio.ws/carlos-martins/house-hostel/dist/img/blog/icons/insta.png"
-  }]
-});
+function socials(){
+  $(".blog-integra-social").jsSocials({
+    showLabel: false,
+    showCount: false,
+    shares: ["facebook", "twitter", "whatsapp", "linkedin"]
+  })
+};
+

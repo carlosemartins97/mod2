@@ -15,15 +15,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;500;700&display=swap" rel="stylesheet">
 
+    <!-- js socials -->
+    <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials.css" />
+    <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials-theme-flat.css" />
+
 </head>
-<body>
+<body onload="socials()">
 
     <?php 
         $relacionados = array(
             0=> array("titulo"=>"O verão está chegando. Que tal uma vista para o mar?", "img"=>"dist/img/blog/noticias/4.png"),
-            1=> array("titulo"=>"O verão está chegando. Que tal uma vista para o mar?", "img"=>"dist/img/blog/noticias/1.png"),
-            2=> array("titulo"=>"O verão está chegando. Que tal uma vista para o mar?", "img"=>"dist/img/blog/noticias/2.png"),
-            3=> array("titulo"=>"O verão está chegando. Que tal uma vista para o mar?", "img"=>"dist/img/blog/noticias/3.png"),
+            1=> array("titulo"=>"Principais Bares e Restaurantes em Santos", "img"=>"dist/img/blog/noticias/1.png"),
+            2=> array("titulo"=>"Economia na Hora de Hospedar sua Família", "img"=>"dist/img/blog/noticias/2.png"),
+            3=> array("titulo"=>"Como avaliar os serviços de um bom hotel para se hospedar?", "img"=>"dist/img/blog/noticias/3.png"),
         )
     ?>
     
@@ -33,10 +37,9 @@
         <div class="blog-integra-content">
             <span>13/08/2018</span>
             <h1>Como avaliar os serviços de um bom hotel para se hospedar?</h1>
-            <div class="blog-integra-social">
-                <a href="#"><img src="dist/img/blog/icons/face.png" alt="Logo do facebook"></a>
-                <a href="#"><img src="dist/img/blog/icons/insta.png" alt="Logo do instagram"></a>
-            </div>
+
+            <div class="blog-integra-social"></div>
+            
             <img src="dist/img/blog/integra/1.png" alt="Foto de pessoas fazendo reserva no hotel.">
             <p>
                 Viajar é uma das melhores maneiras de descansar e curtir a família, mas para isso é importante acertar na escolha da hospedagem. 
@@ -91,6 +94,9 @@
     
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://kit.fontawesome.com/5ced3d7c26.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials.min.js"></script>
     <script type="text/javascript" src="dev/js/main-slider.js"></script>
+
 </body>
 </html>
