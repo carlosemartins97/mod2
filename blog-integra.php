@@ -17,6 +17,15 @@
 
 </head>
 <body>
+
+    <?php 
+        $relacionados = array(
+            0=> array("titulo"=>"O verão está chegando. Que tal uma vista para o mar?", "img"=>"dist/img/blog/noticias/4.png"),
+            1=> array("titulo"=>"O verão está chegando. Que tal uma vista para o mar?", "img"=>"dist/img/blog/noticias/1.png"),
+            2=> array("titulo"=>"O verão está chegando. Que tal uma vista para o mar?", "img"=>"dist/img/blog/noticias/2.png"),
+            3=> array("titulo"=>"O verão está chegando. Que tal uma vista para o mar?", "img"=>"dist/img/blog/noticias/3.png"),
+        )
+    ?>
     
     <?php include_once('./dev/views/components/header.php') ?>
 
@@ -58,6 +67,23 @@
                 Ao avaliar os serviços de um bom hotel também é preciso levar em conta a sua infraestrutura. Verifique se o hotel dispõe de um 
                 restaurante próprio, de garagem, piscina e outras comodidades que podem tornar a sua viagem mais confortável e bem aproveitada.
             </p>
+        </div>
+    </section>
+
+    <section class="integra-leia_mais-container">
+        <div class="integra-leia_mais-content">
+            <h2><img src="dist/img/blog/icons/leia.png" alt="Ícone de um documento"> Leia também</h2>
+            
+            <div class="integra-leia_mais-relacionados">
+                <?php foreach($relacionados as $key => $relacionado) {?>
+                    <div class="integra-leia_mais-post">
+                        <img src="<?= $relacionado["img"] ?>" alt="teste">
+                        <h3><?= $relacionado["titulo"] ?></h3>
+                        <a href="#">+</a>
+                    </div>
+                <?php } ?>
+            </div>
+           
         </div>
     </section>
 
