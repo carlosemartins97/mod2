@@ -80,3 +80,51 @@ $.each(sliders, function() {
   });
 
 });
+
+
+//Slide fotos
+$(document).ready(function(){
+  $('.fotos-slider').slick({
+      slidesToShow: 4,
+      arrows: true,
+      infinite: true,
+      prevArrow: $('#estrutura-buttons-prev'),
+      nextArrow: $('#estrutura-buttons-next'),
+      responsive: [
+        {
+          breakpoint: 1170,
+          settings: {
+            arrows: true,
+            slidesToShow: 3
+          }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            arrows: true,
+            slidesToShow: 2
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            arrows: true,
+            slidesToShow: 1
+          }
+        }
+      ]
+    });
+});
+
+
+// Página do Blog
+$(".blog-card-contato").jsSocials({
+  showLabel: true,
+  shares: [{
+      share: "facebook",
+      logo: "http://ambiente-desenvolvimento.provisorio.ws/carlos-martins/house-hostel/dist/img/blog/icons/face.png"
+  }, {
+      share: "instagram",
+      logo: "http://ambiente-desenvolvimento.provisorio.ws/carlos-martins/house-hostel/dist/img/blog/icons/insta.png"
+  }]
+});

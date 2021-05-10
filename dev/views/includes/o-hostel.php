@@ -43,7 +43,6 @@
             <img src="dist/img/conheca-estrutura/slider/q3.png" alt="Foto da sala">
             <img src="dist/img/conheca-estrutura/slider/q1.png" alt="Foto do quarto">
             <img src="dist/img/conheca-estrutura/slider/q2.png" alt="Foto do escritório">
-            
         </div>
         <div class="estrutura-moreinfo">
             <h2 class="estrutura-moreinfo-titulo">House & Hostel</h2>

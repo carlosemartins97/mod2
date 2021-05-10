@@ -43,7 +43,7 @@
                 <a class="faca-reserva display-none-1170" href="#"><img src="dist/img/header/calendario.png" alt="imagem de um calendário">Faça sua Reserva</a>
             </div>
             <ul class="menu-items2">
-                <li><a href="#">O BLOG</a></li>
+                <li><a href="<?= $base_url .'/blog.php' ?>">O BLOG</a></li>
                 <li><a href="<?= $base_url .'/localizacao.php' ?>">LOCALIZAÇÃO</a></li>
                 <li><a href="#">CONTATOS</a></li>
                 
