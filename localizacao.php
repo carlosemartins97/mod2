@@ -17,7 +17,7 @@
     <section class="localizacao-container">
         <?php include_once('./dev/views/components/whats-flutuante.php') ?>
         <div class="localizacao-content">
-            <h1>Localização</h1>
+            <h1 class="sublinhar-titulo-centralizado">Localização</h1>
             <a 
                 target="_blank"
                 href="https://www.google.com/maps/place/House+Hostel+Guaruj%C3%A1/@-23.9885877,-46.2038534,15z/data=!4m18!1m9!3m8!1s0x0:0xa11857dee4076aa5!2sHouse+Hostel+Guaruj%C3%A1!5m2!4m1!1i2!8m2!3d-23.9885877!4d-46.2038534!3m7!1s0x0:0xa11857dee4076aa5!5m2!4m1!1i2!8m2!3d-23.9885877!4d-46.2038534"

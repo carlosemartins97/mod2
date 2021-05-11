@@ -76,6 +76,11 @@
             position: relative;
             padding-bottom: 25px;
             margin-bottom: 50px; 
+            @media(max-width: 1170px){
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
             &::after {
                 content: '';
                 margin-top: 1rem;
@@ -85,11 +90,7 @@
                 width: 3.5rem;
                 border-bottom: 1px solid $default_color;
                 @media(max-width: 1170px){
-                    left: 45%;
-                    
-                }
-                @media(max-width: 550px){
-                    left: 40%;
+                    left: unset;
                 }
             }
                 @media(max-width: 550px){

@@ -5,6 +5,7 @@
     margin-top: 0;
     background: $grey-light-background;
     position: relative;
+    overflow-y: hidden;
 
     h1 {
         text-align: center;
@@ -14,15 +15,6 @@
         text-transform: uppercase;
         margin: 0;
         color: $text_grey;
-        &::after {
-            left: 48%;
-            @media(max-width: 1170px){
-                left: 47%;
-            }
-            @media(max-width: 550px){
-                left: 40%;
-            }
-        }
     }
 
     .pagina-acomodacoes-content {
@@ -172,16 +164,19 @@
                     position: relative;
                     padding-bottom: 5px;
                     text-transform: uppercase;
+                    @media(max-width: 1170px){
+                        text-align: center;
+                        margin: 0 auto;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        line-height: 2rem;
+                    }
                     &::after {
                         @media(max-width: 1170px){
-                            left: 40%;
+                            left: unset;
+                            bottom: 0;
                         }
-                        @media(max-width: 550px){
-                            left: 40%;
-                        }
-                    }
-                    @media(max-width: 1170px){
-                        line-height: 2rem;
                     }
                 }
 
@@ -214,7 +209,7 @@
                 }
                 @media(max-width: 1170px){
                     padding-bottom: 0;
-                    h2, ul {
+                    ul {
                         display: block;
                         width: 100%;
                         text-align: center;
