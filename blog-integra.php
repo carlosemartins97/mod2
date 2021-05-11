@@ -79,11 +79,11 @@
             
             <div class="integra-leia_mais-relacionados">
                 <?php foreach($relacionados as $key => $relacionado) {?>
-                    <div class="integra-leia_mais-post">
+                    <a href="#" class="integra-leia_mais-post">
                         <img src="<?= $relacionado["img"] ?>" alt="teste">
                         <h3><?= $relacionado["titulo"] ?></h3>
-                        <a href="#">+</a>
-                    </div>
+                        <span>+</span>
+                    </a>
                 <?php } ?>
             </div>
            

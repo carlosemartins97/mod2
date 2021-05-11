@@ -22,6 +22,10 @@
         h1 {
             font-size: 1.9rem;
             font-weight: normal;
+            @media(max-width: 1170px){
+                line-height: 2.2rem;
+                margin-top: 10px;
+            }
         }
         .blog-integra-social {
             text-align: center;
@@ -67,27 +71,33 @@
         }
     }
     @media(max-width: 550px){
-        padding: 30px 10px;
+        padding: 30px 0px;
     }
 }
 
 .integra-leia_mais-container {
     background: $grey-light-background;
     width: 100%;
-    padding: 0 20px 30px;
+    padding: 0 10px 30px;
     .integra-leia_mais-content {
         max-width: 1170px;
         margin: 0 auto;
         h2 {
             color: $default_color;
             font-weight: 300;
-            font-size: 1.9rem;
+            font-size: 1.75rem;
+            letter-spacing: normal;
             display: flex;
             align-items: center;
             justify-content: center;
             margin-bottom: 20px;
             > img {
                 margin-right: 10px;
+            }
+            @media(max-width: 768px){
+                > img {
+                    width: 20px;
+                }
             }
         }
 
@@ -104,21 +114,42 @@
             }
             @media(max-width: 550px){
                 grid-template-columns: 1fr;
-                grid-gap: 0;
+                grid-gap: 40px;
                 .integra-leia_mais-post {
-                    padding: 10px 0;
+                    padding: 0px 0;
                 }
             }
         }
 
         .integra-leia_mais-post {
+            display: block;
             width: 20%;
             text-align: center;
             padding: 30px 0;
+
+            &:hover {
+                span {
+                    background-color: $default_color;
+                }
+                h3 {
+                    
+                    &::after {
+                        border-color: $default_color;
+                    }
+                }
+                img {
+                    filter: brightness(0.8);
+                }
+            }
             
             > img {
                 width: 100%;
                 object-fit: contain;
+                transition: filter 0.3s;
+                @media(max-width: 768px){
+                    width: 200px;
+                }
+                
             }
             h3 {
                 line-height: normal;
@@ -126,11 +157,27 @@
                 letter-spacing: 1px;
                 font-size: 1rem;
                 font-weight: 400;
-                padding-bottom: 20px;
+                margin-bottom: 20px;
+                padding-bottom: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                &::after {
+                    content: '';
+                    position: absolute;
+                    width: 3rem;
+                    border-bottom: 1px solid transparent;
+                    bottom: 0;
+                    transition: border-color 0.3s;
+                }
+                @media(max-width: 768px){
+                    font-size: 1.3rem;
+                    margin-top: 10px;
+                }
                 
             }
 
-            > a {
+            > span {
                 position: relative;
                 max-width: 25px;
                 max-height: 25px;
@@ -143,9 +190,6 @@
                 color: $text_white;
                 border-radius: 50%;
                 transition: background-color 0.3s;
-                &:hover {
-                    background-color: $default_color;
-                }
             }
         }
     }

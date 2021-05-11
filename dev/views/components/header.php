@@ -47,7 +47,7 @@
             <ul class="menu-items2">
                 <li class="<?= $paginaLink == 'blog.php' ? 'nav-active' : '' ?>"><a href="<?= $base_url .'/blog.php' ?>">O BLOG</a></li>
                 <li class="<?= $paginaLink == 'localizacao.php' ? 'nav-active' : '' ?>"><a href="<?= $base_url .'/localizacao.php' ?>">LOCALIZAÇÃO</a></li>
-                <li class=""><a href="#">CONTATOS</a></li>
+                <li class="<?= $paginaLink == 'contato.php' ? 'nav-active' : '' ?>"><a href="<?= $base_url .'/contato.php' ?>">CONTATOS</a></li>
                 
             </ul>
             <div class="contato-reserva display-none-fullresolution">
