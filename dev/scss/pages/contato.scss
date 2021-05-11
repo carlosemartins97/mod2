@@ -1,0 +1,262 @@
+@import '../utils/variaveis.scss';
+
+.contato-container {
+    background: url('../img/fale-conosco/secretaria.png') no-repeat;
+    background-color: $grey-light-background;
+    background-size: auto;
+    background-position: right bottom;
+    padding: 100px 10px;
+    .contato-content {
+        max-width: 1170px;
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        padding: 0 10px;
+        .contato-formulario {
+            flex: 1;
+        }
+        > .contato-info {
+            flex: 1;
+            width: 100%;
+        }
+        @media(max-width: 1170px){
+            flex-direction: column;
+        }
+    }
+    @media(max-width: 550px){
+        background-position: bottom;
+    }
+}
+
+.contato-formulario {
+    max-width: 600px;
+    width: 100%;
+    font-family: 'Oswald', sans-serif;
+    @media(max-width: 1170px){
+        margin: 0 auto;
+    }
+
+    span {
+        font-size: 1.2rem;
+        font-weight: 400;
+        letter-spacing: 2px;
+    }
+    h1 {
+        position: relative;
+        margin-top: 10px;
+        padding-bottom: 30px;
+        max-width: 450px;
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 4rem;
+            border-bottom: 3px solid $default_color;
+        }
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+        
+        label {
+            font-family: 'Arial', sans-serif;
+            font-size: 0.7rem;
+            margin: 10px 0 5px;
+            span {
+                font-size: 0.7rem;
+                color: $text_grey;
+            }
+            input, textarea {
+                border: transparent;
+                background: #fff;
+                border-radius: 5px;
+                margin-top: 10px;
+
+                -webkit-box-shadow: -4px 3px 2px -2px rgba(100,100,100,0.19);
+                -moz-box-shadow: -4px 3px 2px -2px rgba(100,100,100,0.19);
+                box-shadow: -4px 3px 2px -2px rgba(100,100,100,0.19);
+                padding: 10px;
+                &::placeholder {
+                    font-size: 0.8rem;
+                    color: #c3c3c3;
+                }
+            }
+        }
+
+        #nome {
+            input {
+                width: 100%;
+            }
+        }
+        .contato-formulario-userinfo {
+            display: flex;
+            @media(max-width: 500px){
+                flex-direction: column;
+                #email {
+                    width: 100%;
+                }
+            }
+            
+            #email {
+                flex: 2;
+                margin-right: 5%;
+                input {
+                    width: 100%;
+                }
+            }
+            #telefone {
+                flex: 1;
+                input {
+                    width: 100%;
+                }
+            }
+        }
+        #mensagem {
+            textarea {
+                width: 100%;
+                height: 100px;
+            }
+        }
+
+        .contato-formulario-enviar {
+            margin-top: 30px;
+            display: flex;
+            align-items: center;
+            
+            button {
+                font-family: 'Oswald';
+                letter-spacing: 2px;
+                font-weight: 500;
+                background: $default_color;
+                color: $text_white;
+                border: none;
+                max-width: 100px;
+                padding: 10px 0;
+                width: 100%;
+                transition: filter 0.2s;
+                &:hover {
+                    filter: brightness(0.8);
+                }
+            }
+
+            span {
+                font-family: 'Arial', sans-serif;
+                font-size: 0.8rem;
+                letter-spacing: normal;
+                display: flex;
+                align-items: center;
+                width: 100%;
+                margin-left: 30px;
+                background: $green-background;
+                color: $text_green;
+                > img {
+                    margin: 0 10px;
+                }
+            }
+
+            span, button {
+                min-height: 45px;
+            }
+            @media(max-width: 550px){
+                flex-direction: column;
+
+                span {
+                    display: flex;
+                    justify-content: center;
+                    margin: 20px 0;
+                }
+            }
+        }
+    }
+}
+
+.fale-conosco-contato {
+    display: flex;
+    justify-content: space-around;
+    border: 3px solid $default_color;
+    background-color: rgba(255, 255, 255, 0.8);
+
+    padding: 60px 40px;
+
+    -webkit-box-shadow: 0px 0px 25px -11px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 25px -11px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 25px -11px rgba(0,0,0,0.75);
+
+    font-family: "Arial", sans-serif;
+    color: $text_grey;
+
+    flex-direction: column;
+    justify-content: center;
+    max-width: 70%;
+    margin-left: auto;
+    padding: 30px 20px;
+
+    @media(max-width: 1170px){
+        margin: 50px auto;
+        max-width: 600px;
+    }
+
+    .contato-imagem {
+      background-color: $default_color;
+      width: 50px;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 25px;
+      @media(max-width: 550px){
+        min-width: 50px;
+        min-height: 50px;
+      }
+    }
+
+    .contato-info {
+      display: flex;
+      flex-direction: column;
+      margin-top: 10px;
+      
+      .contato-atendimento-whatsapp {
+        font-weight: bold;
+        color: $default_color;
+        font-size: 14px;
+        font-family: "Arial";
+        display: block;
+        margin-top: 10px;
+
+        display: flex;
+        align-items: center;
+        >img {
+          margin-right: 10px;
+        }
+      }
+    }
+
+    .contato-atendimento, .contato-endereco, .contato-funcionamento {
+    display: flex;
+    margin-top: 20px;
+
+    justify-content: flex-start;
+    margin: 20px 0;
+    .contato-imagem {
+        margin-right: 10px;
+    }
+      
+      h2 {
+        color: $default_color;
+        font-size: 1.2rem; 
+        margin-bottom: 10px;
+      } 
+      a, p, span {
+        font-size: 0.9rem;
+        line-height: 18px;
+        padding: 0.2rem;
+        transition: transform 0.2s;
+      }
+
+      a:hover {
+        transform: translateX(10px);
+      }
+    }
+}

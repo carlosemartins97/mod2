@@ -46,7 +46,7 @@
         </div>
         <div class="estrutura-moreinfo">
             <h2 class="estrutura-moreinfo-titulo">House & Hostel</h2>
-            <a class="link-padrao" href="#">VER FOTOS</a>
+            <a class="link-padrao" href="/carlos-martins/house-hostel/fotos.php">VER FOTOS</a>
         </div>
         <div class="estrutura-buttons">
             <button class="estrutura-buttons-prev"><img src="dist/img/conheca-estrutura/slider/setas/left.png" alt="Seta indicando slide anterior."></button>

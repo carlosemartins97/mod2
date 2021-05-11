@@ -7,6 +7,7 @@
 @import './pages/fotos.scss';
 @import './pages/blog.scss';
 @import './pages/blog-integra.scss';
+@import './pages/contato.scss';
 
 //includes
 @import './components/footer.scss';
@@ -36,8 +37,11 @@
     }
 }
 
-body, input, textarea, select, button {
+body, button {
     font: 400 1rem 'Oswald', sans-serif;
+}
+input, textarea, select {
+    font: 400 1rem 'Arial', sans-serif;
 }
 
 button {
