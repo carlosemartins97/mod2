@@ -5,7 +5,7 @@
     background-color: $grey-light-background;
     background-size: auto;
     background-position: right bottom;
-    padding: 100px 10px;
+    padding: 70px 10px;
     .contato-content {
         max-width: 1170px;
         width: 100%;
@@ -24,7 +24,7 @@
         }
     }
     @media(max-width: 1170px){
-        padding-top: 50px;
+        padding-top: 30px;
     }
     @media(max-width: 550px){
         background-position: bottom;
@@ -77,35 +77,42 @@
         flex-direction: column;
         margin-top: 30px;
         
-        label {
+        
+        label, span, input, textarea {
             font-family: 'Arial', sans-serif;
             font-size: 0.7rem;
             margin: 10px 0 5px;
-            
-            span {
-                font-size: 0.7rem;
-                color: $list-color;
-            }
-            input, textarea {
-                border: transparent;
-                background: #fff;
-                border-radius: 5px;
-                margin-top: 10px;
+        }
+      
+        span {
+            font-size: 0.7rem;
+            color: $list-color;
+        }
+        input, textarea {
+            border: transparent;
+            background: #fff;
+            border-radius: 5px;
+            margin-top: 10px;
 
-                -webkit-box-shadow: -4px 3px 2px -2px rgba(100,100,100,0.19);
-                -moz-box-shadow: -4px 3px 2px -2px rgba(100,100,100,0.19);
-                box-shadow: -4px 3px 2px -2px rgba(100,100,100,0.19);
-                padding: 10px;
-                &::placeholder {
-                    font-size: 0.8rem;
-                    color: #c3c3c3;
-                }
+            -webkit-box-shadow: -4px 3px 2px -2px #dee7f0;
+            -moz-box-shadow: -4px 3px 2px -2px #dee7f0;
+            box-shadow: -4px 3px 2px -2px #dee7f0;
+            padding: 10px;
+            &::placeholder {
+                font-size: 0.8rem;
+                color: #c3c3c3;
             }
-            label {
-                color: red;
-                margin-top: 5px;
-                display: block;
-            }
+        }
+
+        #text-mensagem {
+            width: 100%;
+            height: 100px;
+        }
+
+        .error {
+            color: red;
+            margin-top: 5px;
+            display: block;
         }
 
         #nome {
@@ -122,26 +129,21 @@
                 }
             }
             
-            #email {
+            #container-email {
                 flex: 2;
                 margin-right: 5%;
-                input {
-                    width: 100%;
+                @media(max-width: 500px){
+                    margin-right: unset;
                 }
             }
-            #telefone {
+            #container-telefone {
                 flex: 1;
-                input {
-                    width: 100%;
-                }
-            }
-        }
-        #mensagem {
-            textarea {
+            } 
+            #input-email, #input-telefone {
                 width: 100%;
-                height: 100px;
             }
         }
+        
 
         .contato-formulario-enviar {
             margin-top: 30px;
@@ -190,6 +192,9 @@
                     margin: 20px 0;
                 }
             }
+        }
+        @media(max-width: 1170px){
+            margin-top: 10px;
         }
     }
 }

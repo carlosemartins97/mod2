@@ -131,4 +131,21 @@ function socials(){
 function forms(){
   $('#input-telefone').mask('00 0 0000-0000');
   $("#contato-form").validate();
-}
+
+  // inputs da página de contato
+  var inputs = {
+    1: {input: '#input-email', span: '#input-email-span'},
+    2: {input: '#input-nome', span: '#input-nome-span'},
+    3: {input: '#input-telefone', span: '#input-telefone-span'},
+    4: {input: '#text-mensagem', span: '#input-mensagem-span'},
+  }
+  //efeito de focus no input
+  $.each(inputs, function(index){
+    $(this.input).focus(function(){
+      $(inputs[index].span).css('color', '#d9704b');
+    });
+    $(this.input).focusout(function(){
+      $(inputs[index].span).css('color', '#beb9b0');
+    });
+  })
+};

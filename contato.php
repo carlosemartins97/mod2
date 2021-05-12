@@ -24,49 +24,54 @@
                 <span>Fale Conosco</span>
                 <h1>Reserve sua hospedagem em Santos</h1>
                 <form id="contato-form" action="http://hub.fatecrl.edu.br/sobrino/recebe.php">
-                    <label id="nome" for="input-nome"><span>•</span> Seu nome:
-                        <input 
-                        type="text" 
-                        name="input-nome" 
-                        id="input-nome" 
-                        placeholder="Nome completo" 
-                        required data-msg="Por favor, preencha este campo."
-                        data-rule-minlength="3" data-msg-minlength="Mínimo de 3 caracteres."
-                        data-rule-maxlength="40" data-msg-maxlength="Máximo de 40 caracteres."
-                        >
-                    </label>
+                    <label id="nome" for="input-nome"><span id="input-nome-span">•</span> Seu nome:</label>
+                    <input 
+                    type="text" 
+                    name="input-nome" 
+                    id="input-nome" 
+                    placeholder="Nome completo" 
+                    required data-msg="Por favor, preencha este campo."
+                    data-rule-minlength="3" data-msg-minlength="Mínimo de 3 caracteres."
+                    data-rule-maxlength="40" data-msg-maxlength="Máximo de 40 caracteres."
+                    >
+                    
                     <div class="contato-formulario-userinfo">
-                        <label id="email" for="input-email"><span>•</span> Seu e-mail:
+
+                        <div id="container-email">
+                            <label id="email" for="input-email"><span id="input-email-span">•</span> Seu e-mail:</label>
                             <input 
                             type="email" 
                             name="input-email" 
                             id="input-email" 
-                            placeholder="EX: mail@exemplo.com.br" 
+                            placeholder="Ex: mail@exemplo.com.br" 
                             required data-msg="Por favor, insira um e-mail válido."
                             data-rule-maxlength="40" data-msg-maxlength="Máximo de 40 caracteres."
                             >
-                        </label>
-                        <label id="telefone" for="input-telefone"><span>•</span> Telefone:
+                        </div>
+                        
+                        <div id="container-telefone">
+                            <label id="telefone" for="input-telefone"><span id="input-telefone-span">•</span> Telefone:</label>
                             <input 
                             type="tel" 
                             name="input-telefone" 
                             id="input-telefone" 
-                            placeholder="EX: 13 997586542" 
+                            placeholder="Ex: 13 997586542" 
                             required data-msg="Por favor, preencha este campo."
                             data-rule-minlength="11" data-msg-minlength="Insira um número de telefone válido."
                             >
-                        </label>
+                        </div>
+                        
                     </div>
-                    <label id="mensagem" for="text-mensagem"><span>•</span> Mensagem:
-                        <textarea 
-                        name="text-mensagem" 
-                        id="text-mensagem" 
-                        placeholder="Digite aqui a mensagem que deseja nos passar" 
-                        required data-msg="Por favor, preencha este campo."
-                        data-rule-maxlength="500"
-                        data-msg-maxlength="Limite de 500 caracteres atingido."
-                        ></textarea>
-                    </label>
+                    <label id="mensagem" for="text-mensagem"><span id="input-mensagem-span">•</span> Mensagem:</label>
+                    <textarea 
+                    name="text-mensagem" 
+                    id="text-mensagem" 
+                    placeholder="Digite aqui a mensagem que deseja nos passar" 
+                    required data-msg="Por favor, preencha este campo."
+                    data-rule-maxlength="500"
+                    data-msg-maxlength="Limite de 500 caracteres atingido."
+                    ></textarea>
+                    
 
                     <div class="contato-formulario-enviar">
                         <button type="submit">ENVIAR</button>
