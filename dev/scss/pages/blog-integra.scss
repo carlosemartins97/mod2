@@ -103,18 +103,20 @@
 
         .integra-leia_mais-relacionados {
             display: flex;
-            justify-content: space-between;
+            justify-content: space-between; 
             @media(max-width: 768px){
                 display: grid;
                 grid-template-columns: 1fr 1fr;
                 grid-gap: 40px;
+                
                 .integra-leia_mais-post {
-                    width:100%;
+                    width:200px;
+                    margin: 0 auto;
                 }
             }
             @media(max-width: 550px){
                 grid-template-columns: 1fr;
-                grid-gap: 40px;
+                grid-gap: 20px;
                 .integra-leia_mais-post {
                     padding: 0px 0;
                 }

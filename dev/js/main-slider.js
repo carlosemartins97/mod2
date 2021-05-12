@@ -126,3 +126,8 @@ function socials(){
   })
 };
 
+
+//Página contato
+function forms(){
+  $('#input-telefone').mask('13 9 9735-2803');
+}

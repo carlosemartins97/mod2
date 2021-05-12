@@ -14,7 +14,7 @@
 
     <link rel="stylesheet" tpe="text/css" href="dist/css/styles.css">
 </head>
-<body>
+<body onload="forms()">
 
 <?php include_once('./dev/views/components/header.php') ?>
     
@@ -23,16 +23,16 @@
             <div class="contato-formulario">
                 <span>Fale Conosco</span>
                 <h1>Reserve sua hospedagem em Santos</h1>
-                <form action="">
+                <form action="http://hub.fatecrl.edu.br/sobrino/recebe.php">
                     <label id="nome" for="input-nome"><span>•</span> Seu nome:
-                        <input type="text" id="input-nome" placeholder="Nome completo">
+                        <input type="text" name="input-nome" id="input-nome" placeholder="Nome completo">
                     </label>
                     <div class="contato-formulario-userinfo">
                         <label id="email" for="input-email"><span>•</span> Seu e-mail:
-                            <input type="text" id="input-email" placeholder="EX: mail@exemplo.com.br">
+                            <input type="text" name="input-email" id="input-email" placeholder="EX: mail@exemplo.com.br">
                         </label>
                         <label id="telefone" for="input-telefone"><span>•</span> Telefone:
-                            <input type="text" id="input-telefone" placeholder="EX: 13 997586542">
+                            <input type="text" name="input-telefone" id="input-telefone" placeholder="EX: 13 997586542">
                         </label>
                     </div>
                     <label id="mensagem" for="text-mensagem"><span>•</span> Mensagem:
@@ -92,6 +92,7 @@
 
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="dev/js/jquery.mask.min.js"></script>
     <script type="text/javascript" src="dev/js/main-slider.js"></script>
 </body>
 </html>
