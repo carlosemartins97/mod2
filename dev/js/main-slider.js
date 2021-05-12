@@ -129,5 +129,6 @@ function socials(){
 
 //Página contato
 function forms(){
-  $('#input-telefone').mask('13 9 9735-2803');
+  $('#input-telefone').mask('00 0 0000-0000');
+  $("#contato-form").validate();
 }
