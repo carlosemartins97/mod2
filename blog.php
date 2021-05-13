@@ -11,8 +11,9 @@
     <!-- Main css -->
     <link rel="stylesheet" tpe="text/css" href="dist/css/styles.css">
 
-    <link rel="stylesheet" tpe="text/css" href="dist/css/utils/jssocials.css">
-    <link rel="stylesheet" tpe="text/css" href="dist/css/utils/jssocials-theme-flat.css">
+    <!-- js socials -->
+    <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials.css" />
+    <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials-theme-flat.css" />
 
     <!-- fontes -->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -106,7 +107,7 @@
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="https://kit.fontawesome.com/5ced3d7c26.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials.min.js"></script>
     <script type="text/javascript" src="dev/js/main-slider.js"></script>
-    <script src="dev/js/jssocials.min.js"></script>
 </body>
 </html>

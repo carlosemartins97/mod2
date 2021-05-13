@@ -129,7 +129,18 @@ function socials(){
 
 //Página contato
 function forms(){
-  $('#input-telefone').mask('00 0 0000-0000');
+  //máscara telefone e celular
+  var SPMaskBehavior = function (val) {
+    return val.replace(/\D/g, '').length === 11 ? '(00) 00000-0000' : '(00) 0000-00009';
+  },
+  spOptions = {
+    onKeyPress: function(val, e, field, options) {
+        field.mask(SPMaskBehavior.apply({}, arguments), options);
+      }
+  };
+  $('#input-telefone').mask(SPMaskBehavior, spOptions);
+
+  //validando formulario
   $("#contato-form").validate();
 
   // inputs da página de contato

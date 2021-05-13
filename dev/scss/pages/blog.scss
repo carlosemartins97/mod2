@@ -115,11 +115,17 @@
                     object-fit: cover;
                 }
                 .blog-card-contato {
-                    padding-top: 10px;
-                    
+                
                     .jssocials-shares {
                         display: flex;
+                        margin: 0;
+                        @media(max-width: 768px){
+                            justify-content: center;
+                        }
+
                     }
+
+                    
                     
                 }
             }
@@ -253,7 +259,13 @@
     }
 }
 
+.jssocials-shares {
+    margin: 0;
+}
+
 .jssocials-share {
+    margin: 0;
+    transform: scale(0.8);
     a {
         border-radius: 50%;
         width: 35px;
