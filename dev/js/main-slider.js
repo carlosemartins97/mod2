@@ -177,8 +177,9 @@ function reserva(){
         $('#label-check-out').css('display', 'block');
         $('#check-out').css('display', 'block');
 
-        $('#mensagem').css('display', 'none');
-        $('#text-mensagem').css('display', 'none');
+        $('#acomodacao-error').css('display', 'block');
+        $('#check-in-error').css('display', 'block');
+        $('#check-out-error').css('display', 'block');
 
       } else {
         $('#acomodacao').css('display', 'none').val("");
@@ -190,8 +191,9 @@ function reserva(){
         $('#label-check-out').css('display', 'none');
         $('#check-out').css('display', 'none').val("");
 
-        $('#mensagem').css('display', 'block');
-        $('#text-mensagem').css('display', 'block').val("");
+        $('#acomodacao-error').css('display', 'none');
+        $('#check-in-error').css('display', 'none');
+        $('#check-out-error').css('display', 'none');
       }
     })
 }

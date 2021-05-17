@@ -25,7 +25,6 @@
     }
     @media(max-width: 1170px){
         padding-top: 30px;
-        padding-bottom: 0px;
         background-size:contain;
     }
     @media(max-width: 550px){
@@ -234,6 +233,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     .fale-conosco-contato {
     display: flex;
     justify-content: space-around;
@@ -255,8 +255,11 @@
     padding: 30px 20px;
 
     @media(max-width: 1170px){
-        margin: 50px auto;
+        width: 100%;
         max-width: 600px;
+    }
+    @media(max-width: 768px){
+        margin: 50px auto 0px;
         padding: 0 20px;
     }
 
