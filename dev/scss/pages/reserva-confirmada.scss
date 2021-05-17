@@ -1,0 +1,48 @@
+@import '../utils/variaveis.scss';
+
+.resposta-form-container {
+    width: 100%;
+    background: $grey-light-background;
+
+    .resposta-form-content {
+        max-width: 1170px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 50px 10px;
+       
+        h1 {
+            text-align: center;
+            position: relative;
+            margin-bottom: 30px;
+            padding-bottom: 10px;
+        }
+
+        a {
+            display: block;
+            max-width: 250px;
+            text-align: center;
+            
+            margin: 20px auto 0;
+        }
+        
+        #resposta-info {
+            font-family: 'Arial';
+            max-width: 500px;
+            border: 5px solid $default_color;
+            margin: 10px auto 0;
+            padding: 0 20px;
+            background: $text_white;
+        }
+
+        p {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        
+
+        .p-center {
+            text-align: center;
+        }
+    }
+}

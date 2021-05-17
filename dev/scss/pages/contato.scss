@@ -87,7 +87,7 @@
         margin-top: 30px;
         
         
-        label, span, input, textarea {
+        label, span, input, textarea, select {
             font-family: 'Arial', sans-serif;
             font-size: 0.8rem;
             margin: 10px 0 5px;
@@ -111,7 +111,7 @@
                 display: inline;
             }
         }
-        input, textarea {
+        input, textarea, select {
             border: transparent;
             background: #fff;
             border-radius: 5px;
@@ -131,10 +131,14 @@
             height: 100px;
         }
 
-        .error {
+        label.error {
             color: red;
             margin-top: 0px;
             display: block;
+        }
+
+        select.error, input.error, textarea.error {
+            border: 1px solid red;
         }
 
         #nome {
@@ -227,6 +231,9 @@
 }
 
 .contato-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     .fale-conosco-contato {
     display: flex;
     justify-content: space-around;
@@ -244,6 +251,7 @@
     justify-content: center;
     max-width: 70%;
     margin-left: auto;
+    margin-top: 50px;
     padding: 30px 20px;
 
     @media(max-width: 1170px){

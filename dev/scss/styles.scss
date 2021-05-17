@@ -8,11 +8,15 @@
 @import './pages/blog.scss';
 @import './pages/blog-integra.scss';
 @import './pages/contato.scss';
+@import './pages/reserva.scss';
+@import './pages/reserva-confirmada.scss';
+
 
 //includes
 @import './components/footer.scss';
 @import './components/header.scss';
 @import './components/whats-flutuante.scss';
+@import './components/fale-conosco.scss'; 
 
 //detalhes
 @import './utils/details.scss';

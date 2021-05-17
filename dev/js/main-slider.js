@@ -160,3 +160,38 @@ function forms(){
     });
   })
 };
+
+//Página de reserva
+function reserva(){
+
+    $('#assunto').change(function(){
+      var id = $(this).val();
+      
+      if(id === 'fazer-reserva'){
+        $('#acomodacao').css('display', 'block');
+        $('#select-acomodacao').css('display', 'block');
+
+        $('#label-check-in').css('display', 'block');
+        $('#check-in').css('display', 'block');
+
+        $('#label-check-out').css('display', 'block');
+        $('#check-out').css('display', 'block');
+
+        $('#mensagem').css('display', 'none');
+        $('#text-mensagem').css('display', 'none');
+
+      } else {
+        $('#acomodacao').css('display', 'none').val("");
+        $('#select-acomodacao').css('display', 'none');
+        
+        $('#label-check-in').css('display', 'none');
+        $('#check-in').css('display', 'none').val("");
+        
+        $('#label-check-out').css('display', 'none');
+        $('#check-out').css('display', 'none').val("");
+
+        $('#mensagem').css('display', 'block');
+        $('#text-mensagem').css('display', 'block').val("");
+      }
+    })
+}

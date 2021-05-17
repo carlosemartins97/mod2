@@ -42,17 +42,17 @@
         <a href="/carlos-martins/house-hostel/"><img id="header-logo" src="dist/img/header/full-logo.png" alt="logo da empresa Hostel"></a>
         <div class="reserva">
             <div class="menu-reserva">
-                <a class="faca-reserva display-none-1170" href="#"><img src="dist/img/header/calendario.png" alt="imagem de um calendário">Faça sua Reserva</a>
+                <a class="faca-reserva display-none-1170" href="<?= $base_url .'/reserva.php' ?>"><img src="dist/img/header/calendario.png" alt="imagem de um calendário">Faça sua Reserva</a>
             </div>
             <ul class="menu-items2">
                 <li class="<?= $paginaLink == 'blog.php' ? 'nav-active' : '' ?>"><a href="<?= $base_url .'/blog.php' ?>">O BLOG</a></li>
                 <li class="<?= $paginaLink == 'localizacao.php' ? 'nav-active' : '' ?>"><a href="<?= $base_url .'/localizacao.php' ?>">LOCALIZAÇÃO</a></li>
-                <li class="<?= $paginaLink == 'contato.php' ? 'nav-active' : '' ?>"><a href="<?= $base_url .'/contato.php' ?>">CONTATOS</a></li>
+                <li class="<?= $paginaLink == 'contato.php' ? 'nav-active' : '' ?>"><a href="<?= $base_url .'/reserva.php' ?>">CONTATOS</a></li>
                 
             </ul>
             <div class="contato-reserva display-none-fullresolution">
                 <a class="header-logo-contato" href="#"><img src="dist/img/header/whats-icon.png" alt="logo do whatsapp"> (00) 0000-0000</a>
-                <a class="faca-reserva" href="#"><img src="dist/img/header/calendario.png" alt="imagem de um calendário">Faça sua Reserva</a>
+                <a class="faca-reserva" href="<?= $base_url .'/reserva.php' ?>"><img src="dist/img/header/calendario.png" alt="imagem de um calendário">Faça sua Reserva</a>
             </div>
         </div>
     </nav>
