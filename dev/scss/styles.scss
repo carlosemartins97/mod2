@@ -22,6 +22,10 @@
 @import './utils/details.scss';
 @import './utils/variaveis.scss';
 
+//estilos apenas pro IE 10 & 11;
+@import './utils/internet-explorer.scss';
+
+
 
 //global styles
 * {

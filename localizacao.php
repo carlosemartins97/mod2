@@ -7,6 +7,9 @@
     <meta http-equiv="x-ua-compatible" content="IE=edge">
     <title>Localização - House & Hostel</title>
 
+    <link rel="shortcut icon" href="dev/img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="dev/img/favicon/favicon.ico" type="image/x-icon">
+
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" tpe="text/css" href="dist/css/styles.css">
 </head>
@@ -34,8 +37,7 @@
     
     <?php include_once('./dev/views/components/footer.php') ?>
 
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="dev/js/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="dev/js/main-slider.js"></script>
 </body>
 </html>

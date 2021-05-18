@@ -9,6 +9,9 @@
     <!-- Plugin lightbox -->
     <link href="dist/css/utils/lity.css" rel="stylesheet">
 
+    <link rel="shortcut icon" href="dev/img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="dev/img/favicon/favicon.ico" type="image/x-icon">
+
     
     <!-- Plugin slick slider -->
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
@@ -92,8 +95,7 @@
     <?php include_once('./dev/views/components/footer.php') ?>
     
     
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="dev/js/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script type="text/javascript" src="dev/js/main-slider.js"></script>
     <script src="dev/js/lity.js"></script>

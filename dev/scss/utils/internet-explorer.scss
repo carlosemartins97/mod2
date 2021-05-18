@@ -1,0 +1,39 @@
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    
+    //PÁGINA HOME
+    .acomodacoes-info {
+        height: 340px;
+        justify-content: space-between;
+    }
+
+    //PÁGINA FOTOS
+    .fotos-container > .fotos-content > .fotos-grid {
+        display: flex;
+        @media(max-width: 1170px){
+            display: none;
+        }
+        > div {
+            flex: 1 1 auto;
+
+            .ampliar-imagem {
+                left: 0;
+            }
+        }
+    }
+
+    .fotos-container .fotos-content .fotos-grid div .fotos-grid-normal, .fotos-container .fotos-content .fotos-grid div .fotos-grid-maior {
+        flex: 1 1 auto;
+        -ms-flex: 1 1 auto;
+        -webkit-box-flex: 1 1 auto;
+    }
+
+    //titulos globais
+    .sublinhar-titulo-centralizado {
+        &::after {
+          left: 48%;
+          @media(max-width: 550px){
+              left: 45%;
+          }
+        }
+      }
+}

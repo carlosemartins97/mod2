@@ -15,6 +15,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;500;700&display=swap" rel="stylesheet">
 
+    <link rel="shortcut icon" href="dev/img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="dev/img/favicon/favicon.ico" type="image/x-icon">
+
     <!-- js socials -->
     <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials.css" />
     <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials-theme-flat.css" />
@@ -79,7 +82,7 @@
             
             <div class="integra-leia_mais-relacionados">
                 <?php foreach($relacionados as $key => $relacionado) {?>
-                    <a href="#" class="integra-leia_mais-post">
+                    <a href="blog-integra" class="integra-leia_mais-post">
                         <img src="<?= $relacionado["img"] ?>" alt="teste">
                         <h3><?= $relacionado["titulo"] ?></h3>
                         <span>+</span>
@@ -92,10 +95,9 @@
 
     <?php include_once('./dev/views/components/footer.php') ?>
     
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script src="https://kit.fontawesome.com/5ced3d7c26.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="dev/js/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials.min.js"></script>
+    <script src="https://kit.fontawesome.com/5ced3d7c26.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="dev/js/main-slider.js"></script>
 
 </body>

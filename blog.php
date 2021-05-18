@@ -15,6 +15,9 @@
     <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials.css" />
     <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials-theme-flat.css" />
 
+    <link rel="shortcut icon" href="dev/img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="dev/img/favicon/favicon.ico" type="image/x-icon">
+
     <!-- fontes -->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;500;700&display=swap" rel="stylesheet">
@@ -59,11 +62,6 @@
             ),
         )
     ?>
-    
-    <?php 
-        $base_url = '/carlos-martins/house-hostel'
-    ?>
-
     <?php include_once('./dev/views/components/header.php') ?>
 
     <section class="blog-container">
@@ -86,7 +84,7 @@
                     <span><?= $post["data"] ?></span>
                     <h2 class="sublinhar-titulo"><?= $post["titulo"] ?></h2>
                     <p><?= $post["descricao"] ?></p>
-                    <a href="<?= $base_url."/blog-integra.php" ?>">Continue lendo &#8594;</a>
+                    <a href="blog-integra">Continue lendo &#8594;</a>
                 </div>
             </div>
             <?php } ?>
@@ -104,10 +102,9 @@
 
     <?php include_once('./dev/views/components/footer.php') ?>
     
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script src="https://kit.fontawesome.com/5ced3d7c26.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="dev/js/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials.min.js"></script>
+    <script src="https://kit.fontawesome.com/5ced3d7c26.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="dev/js/main-slider.js"></script>
 </body>
 </html>
