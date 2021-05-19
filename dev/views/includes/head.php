@@ -19,6 +19,8 @@
         <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
         <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
         <title>House&Hostel</title>
+    <?php } else { ?>
+        <title><?=$page?> - House&Hostel</title>
     <?php } ?>
 
     <?php if($page == 'O Hostel' || $page == 'Acomodações'){ ?>
@@ -47,5 +49,8 @@
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
     <?php } ?>
 
-    <title><?=$page?> - House&Hostel</title>
+    <?php if($page == 'Localização'){ ?>
+    <?php } ?>
+
+
 </head>
