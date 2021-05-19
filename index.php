@@ -1,22 +1,9 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <link rel="preconnect" href="https://fonts.gstatic.com">    
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;500;700&display=swap" rel="stylesheet">
-
-    <link rel="shortcut icon" href="dev/img/favicon/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="dev/img/favicon/favicon.ico" type="image/x-icon">
-
-    <link rel="stylesheet" tpe="text/css" href="dist/css/styles.css">
-
-    <title>House & Hostel</title>
-</head>
+<?php 
+    $page = 'home';
+    include_once('dev/views/includes/head.php');
+?>
 <body onload="slickHome()">
 
     <?php include_once('./dev/views/components/header.php') ?>
@@ -28,7 +15,7 @@
 
                 <h1>RESERVE SUA HOSPEDAGEM EM GUARUJÁ</h1>
 
-                <a href="reserva">CLIQUE E FAÇA SUA RESERVA</a>
+                <a href="contato">CLIQUE E FAÇA SUA RESERVA</a>
             </div>
 
         </div>
@@ -38,7 +25,7 @@
 
                 <h1>RESERVE SUA HOSPEDAGEM EM GUARUJÁ</h1>
 
-                <a href="reserva">CLIQUE E FAÇA SUA RESERVA</a>
+                <a href="contato">CLIQUE E FAÇA SUA RESERVA</a>
             </div>
         </div>
     </section>
@@ -57,7 +44,7 @@
                         Frigobar, Varanda com vista pro mar,
                         Banheiro individual
                     </p>
-                    <a class="link-padrao" href="reserva">Reservar</a>
+                    <a class="link-padrao" href="contato">Reservar</a>
                 </div>
             </div>
             <div class="acomodacoes-content">
@@ -70,7 +57,7 @@
                         Cama de casal Queen, Frigobar, 
                         Banheiro individual
                     </p>
-                    <a class="link-padrao" href="reserva">Reservar</a>
+                    <a class="link-padrao" href="contato">Reservar</a>
                 </div>
             </div>
             <div class="acomodacoes-content">
@@ -83,7 +70,7 @@
                         quarto com 1 armazenamento
                         para cada pessoa
                     </p>
-                    <a class="link-padrao" href="reserva">Reservar</a>
+                    <a class="link-padrao" href="contato">Reservar</a>
                 </div>
             </div>
         </div>
@@ -107,9 +94,9 @@
                     </div>
                     <div class="contato-info">
                         <h2>Atendimento</h2>
-                        <a href="#">Fone fax: (00)0000-0000</a>
-                        <a href="#">contato@house&hostel.com.br</a>
-                        <a href="#" class="contato-atendimento-whatsapp"><img src="dist/img/header/whats-icon.png" alt="ícone do whatsapp">(00) 0000-0000</a>
+                        <a href=”tel:+55000000000000″>Fone fax: (00)0000-0000</a>
+                        <a href="mailto:teste@teste.com?subject=Reserva">contato@house&hostel.com.br</a>
+                        <a target="_blank" href="https://api.whatsapp.com/send?phone=00000000000" class="contato-atendimento-whatsapp"><img src="dist/img/header/whats-icon.png" alt="ícone do whatsapp">(00) 0000-0000</a>
                     </div>
                     </div>
                 <div class="contato-endereco">
@@ -138,6 +125,8 @@
             </div>
         </div>
     </section>
+
+    <?php include_once('./dev/views/components/whats-flutuante.php') ?>
 
     <?php include_once('./dev/views/components/footer.php') ?>
 

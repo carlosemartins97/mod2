@@ -1,18 +1,7 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="x-ua-compatible" content="IE=edge">
-    <title>Localização - House & Hostel</title>
-
-    <link rel="shortcut icon" href="dev/img/favicon/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="dev/img/favicon/favicon.ico" type="image/x-icon">
-
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" tpe="text/css" href="dist/css/styles.css">
-</head>
+<?php 
+    $page = 'Localização';
+    include_once('dev/views/includes/head.php');
+?>
 <body>
     
     <?php include_once('./dev/views/components/header.php') ?>

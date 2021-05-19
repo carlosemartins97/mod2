@@ -233,14 +233,11 @@
             .pagination-page {
                 margin: 0 10px;
                 padding: 0 10px;
-                transition: background-color 0.2s;
+                transition: all 0.2s;
                 &.active {
                     background: $text_grey;
                     color: $text_white;
                     border-bottom: 3px solid $default_color;
-
-                    transition: color 0.2s;
-                    transition: background-color 0.2s;
                     &:hover {
                         color: $text_grey;
                     }

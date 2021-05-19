@@ -62,11 +62,13 @@
     margin: 0 auto;
     padding: 0 10px;
     max-width: 1170px;
+    max-height: 190px;
 
     display: flex;
     justify-content: space-between;
 
     @media(max-width: 1170px){
+        max-height: unset;
         flex-direction: column;
         padding-bottom: 5px;
     }

@@ -164,36 +164,62 @@ function forms(){
 //Página de reserva
 function reserva(){
 
-    $('#assunto').change(function(){
-      var id = $(this).val();
+  //setando linguagem padrão do datapicker como Português.
+  jQuery(function($){
+    $.datepicker.regional['pt-BR'] = {
+            closeText: 'Fechar',
+            prevText: '&#x3c;Anterior',
+            nextText: 'Pr&oacute;ximo&#x3e;',
+            currentText: 'Hoje',
+            monthNames: ['Janeiro','Fevereiro','Mar&ccedil;o','Abril','Maio','Junho',
+            'Julho','Agosto','Setembro','Outubro','Novembro','Dezembro'],
+            monthNamesShort: ['Jan','Fev','Mar','Abr','Mai','Jun',
+            'Jul','Ago','Set','Out','Nov','Dez'],
+            dayNames: ['Domingo','Segunda-feira','Ter&ccedil;a-feira','Quarta-feira','Quinta-feira','Sexta-feira','Sabado'],
+            dayNamesShort: ['Dom','Seg','Ter','Qua','Qui','Sex','Sab'],
+            dayNamesMin: ['Dom','Seg','Ter','Qua','Qui','Sex','Sab'],
+            weekHeader: 'Sm',
+            dateFormat: 'dd/mm/yy',
+            firstDay: 0,
+            isRTL: false,
+            showMonthAfterYear: false,
+            yearSuffix: ''};
+    $.datepicker.setDefaults($.datepicker.regional['pt-BR']);
+  });
+
+  $('#check-in').datepicker();
+  $('#check-out').datepicker();
+
+  $('#assunto').change(function(){
+    var id = $(this).val();
+    
+    if(id === 'fazer-reserva'){
+      $('#acomodacao').css('display', 'block');
+      $('#select-acomodacao').css('display', 'block');
+
+      $('#label-check-in').css('display', 'block');
+      $('#check-in').css('display', 'block');
+
+      $('#label-check-out').css('display', 'block');
+      $('#check-out').css('display', 'block');
+
+      $('#acomodacao-error').css('display', 'block');
+      $('#check-in-error').css('display', 'block');
+      $('#check-out-error').css('display', 'block');
+
+    } else {
+      $('#acomodacao').css('display', 'none').val("");
+      $('#select-acomodacao').css('display', 'none');
       
-      if(id === 'fazer-reserva'){
-        $('#acomodacao').css('display', 'block');
-        $('#select-acomodacao').css('display', 'block');
+      $('#label-check-in').css('display', 'none');
+      $('#check-in').css('display', 'none').val("");
+      
+      $('#label-check-out').css('display', 'none');
+      $('#check-out').css('display', 'none').val("");
 
-        $('#label-check-in').css('display', 'block');
-        $('#check-in').css('display', 'block');
-
-        $('#label-check-out').css('display', 'block');
-        $('#check-out').css('display', 'block');
-
-        $('#acomodacao-error').css('display', 'block');
-        $('#check-in-error').css('display', 'block');
-        $('#check-out-error').css('display', 'block');
-
-      } else {
-        $('#acomodacao').css('display', 'none').val("");
-        $('#select-acomodacao').css('display', 'none');
-        
-        $('#label-check-in').css('display', 'none');
-        $('#check-in').css('display', 'none').val("");
-        
-        $('#label-check-out').css('display', 'none');
-        $('#check-out').css('display', 'none').val("");
-
-        $('#acomodacao-error').css('display', 'none');
-        $('#check-in-error').css('display', 'none');
-        $('#check-out-error').css('display', 'none');
-      }
-    })
+      $('#acomodacao-error').css('display', 'none');
+      $('#check-in-error').css('display', 'none');
+      $('#check-out-error').css('display', 'none');
+    }
+  })
 }

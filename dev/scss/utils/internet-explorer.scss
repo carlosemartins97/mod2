@@ -1,3 +1,4 @@
+@import './variaveis.scss';
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
     
     //PÁGINA HOME
@@ -35,5 +36,22 @@
               left: 45%;
           }
         }
-      }
+    }
+
+    //borda dos botões do IE
+    .estrutura-buttons {
+        button {
+            border: none;
+        }
+    }
+
+    //centralizando botão "+"
+    .integra-leia_mais-post > span {
+        height: 25px;
+    }
+
+    //centralizando botões de compartilhamento de notícia
+    .jssocials-share-link {
+        padding: 15px 8px !important;
+    }
 }

@@ -6,7 +6,7 @@
   overflow-x: hidden;
 
   width: 100%;
-  margin-top: -40px;
+  margin-top: 0px;
 
   @media(max-width: 1170px){
     margin-top: unset;
@@ -270,21 +270,19 @@
 }
 
 .fale-conosco {
-  padding: 50px 10px 150px 10px;
+  padding: 50px 10px 100px;
   width: 100%;
   background: url('../img/fale-conosco/secretaria.png') no-repeat;
   background-position: right;
   background-size: contain;
 
   @media(max-width: 1170px){
-    padding-bottom: 10px; 
+    padding-bottom: 50px; 
     padding-top: unset;
     background-position-y: bottom;
   }
   @media(max-width: 550px){
-    padding-bottom: 10px; 
     background-size: 200%;
-    
   }
 
   .fale-conosco-container {
@@ -376,7 +374,13 @@
       .contato-info {
         display: flex;
         flex-direction: column;
-        margin-top: 10px;
+        align-items: flex-start;
+        justify-content: flex-start;
+        margin-top: 0px;
+
+        h2 {
+          line-height: normal;
+        }
         
         .contato-atendimento-whatsapp {
           font-weight: bold;
@@ -398,7 +402,7 @@
         display: flex;
 
         @media(max-width: 1170px){
-          margin-top: 20px;
+          margin-top: 30px;
         }
 
         @media(max-width: 550px){

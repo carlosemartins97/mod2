@@ -1,27 +1,9 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fotos - House & Hostel</title>
-
-    <!-- Plugin lightbox -->
-    <link href="dist/css/utils/lity.css" rel="stylesheet">
-
-    <link rel="shortcut icon" href="dev/img/favicon/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="dev/img/favicon/favicon.ico" type="image/x-icon">
-
-    
-    <!-- Plugin slick slider -->
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;500;700&display=swap" rel="stylesheet">
-    
-    <!-- Main css -->
-    <link rel="stylesheet" tpe="text/css" href="dist/css/styles.css">
-</head>
+<?php 
+    $page = 'Fotos';
+    include_once('dev/views/includes/head.php');
+?>
 <body onload="slickFotos()">
     <?php 
         $fotos = array(
@@ -91,6 +73,8 @@
             <button id="estrutura-buttons-next"><img src="dist/img/conheca-estrutura/slider/setas/right.png" alt="Seta indicando próximo slide."></button>
         </div>
     </section>
+
+    <?php include_once('./dev/views/components/whats-flutuante.php') ?>
 
     <?php include_once('./dev/views/components/footer.php') ?>
     

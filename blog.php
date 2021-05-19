@@ -1,29 +1,9 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-
-    <title>O Blog - House & Hostel</title>
-
-    <!-- Main css -->
-    <link rel="stylesheet" tpe="text/css" href="dist/css/styles.css">
-
-    <!-- js socials -->
-    <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials.css" />
-    <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials-theme-flat.css" />
-
-    <link rel="shortcut icon" href="dev/img/favicon/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="dev/img/favicon/favicon.ico" type="image/x-icon">
-
-    <!-- fontes -->
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;500;700&display=swap" rel="stylesheet">
-    
-
-</head>
+<?php 
+    $page = 'Blog';
+    include_once('dev/views/includes/head.php');
+?>
 <body onload="socials()">
 
     <?php 

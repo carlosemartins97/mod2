@@ -5,9 +5,9 @@
         </div>
         <div class="contato-info">
             <h2>Atendimento</h2>
-            <a href="#">Fone fax: (00)0000-0000</a>
-            <a href="#">contato@house&hostel.com.br</a>
-            <a href="#" class="contato-atendimento-whatsapp"><img src="dist/img/header/whats-icon.png" alt="ícone do whatsapp">(00) 0000-0000</a>
+            <a href=”tel:+55000000000000″>Fone fax: (00)0000-0000</a>
+            <a href="mailto:teste@teste.com?subject=Reserva">contato@house&hostel.com.br</a>
+            <a target="_blank" href="https://api.whatsapp.com/send?phone=00000000000" class="contato-atendimento-whatsapp"><img src="dist/img/header/whats-icon.png" alt="ícone do whatsapp">(00) 0000-0000</a>
         </div>
         </div>
     <div class="contato-endereco">
