@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-<html lang="pt-br">
 <?php 
     $page = 'O Hostel';
     include_once('dev/views/includes/head.php');

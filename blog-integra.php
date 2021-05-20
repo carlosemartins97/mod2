@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-<html lang="pt-br">
 <?php 
     $page = 'Blog Integra';
     include_once('dev/views/includes/head.php');

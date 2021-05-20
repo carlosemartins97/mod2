@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-<html lang="pt-br">
 <?php 
     $page = 'Acomodações';
     include_once('dev/views/includes/head.php');

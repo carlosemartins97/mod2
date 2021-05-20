@@ -52,6 +52,23 @@
 
     //centralizando botões de compartilhamento de notícia
     .jssocials-share-link {
-        padding: 15px 8px !important;
+        height: 40px !important;
+        min-height: 40px !important;
+        width: 40px !important;
+        padding: 18px 8px !important;
+    }
+    .jssocials-share-logo {
+        padding-left: 2px;
+        padding-top: 2px;
+    }
+
+
+    //integra post
+    .integra-leia_mais-post {
+        h3 {
+            &::after {
+                left: 40%;
+            }
+        }
     }
 }

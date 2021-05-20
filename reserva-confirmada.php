@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-<html lang="pt-br">
 <?php 
     $page = 'Reserva Confirmada';
     include_once('dev/views/includes/head.php');
